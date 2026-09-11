@@ -24,6 +24,10 @@
     </table>
 </div>
 
+<figure class="guide-figure guide-figure--phone">
+    <img src="{{ asset('img/screens/achievements.webp') }}" srcset="{{ asset('img/screens/achievements.webp') }} 1x, {{ asset('img/screens/achievements@2x.webp') }} 2x" width="540" height="1142" alt="Achievements screen showing 15 of 56 unlocked, grouped into Time in the chair and Books, with progress bars on the locked ones" loading="lazy">
+</figure>
+
 <h2 id="how-it-works">How the purchase works</h2>
 <ul>
     <li><strong>One payment, no renewal.</strong> Pro is an in-app purchase handled by Google Play Billing. The price is shown in Google Play before you buy and may vary by region.</li>

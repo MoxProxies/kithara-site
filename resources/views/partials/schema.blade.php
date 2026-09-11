@@ -42,6 +42,8 @@
             asset('img/screens/player@2x.webp'),
             asset('img/screens/library@2x.webp'),
             asset('img/screens/stats@2x.webp'),
+            asset('img/screens/transcript@2x.webp'),
+            asset('img/screens/achievements@2x.webp'),
         ],
         'author' => ['@id' => url('/#organization')],
         'publisher' => ['@id' => url('/#organization')],

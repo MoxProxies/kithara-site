@@ -76,20 +76,28 @@
         </div>
         <div class="screens" data-reveal-group>
             <figure class="screen">
-                <img src="{{ asset('img/screens/library.webp') }}" srcset="{{ asset('img/screens/library.webp') }} 1x, {{ asset('img/screens/library@2x.webp') }} 2x" width="540" height="1142" alt="Library list with progress, time left and pinned books" loading="lazy">
+                <img src="{{ asset('img/screens/library.webp') }}" srcset="{{ asset('img/screens/library.webp') }} 1x, {{ asset('img/screens/library@2x.webp') }} 2x" width="540" height="1142" alt="Library list with progress bars, time left, and pinned books at the top" loading="lazy">
                 <figcaption>Library, with progress and time left at a glance</figcaption>
             </figure>
             <figure class="screen">
-                <img src="{{ asset('img/screens/grid.webp') }}" srcset="{{ asset('img/screens/grid.webp') }} 1x, {{ asset('img/screens/grid@2x.webp') }} 2x" width="540" height="1142" alt="Library in cover grid view filtered to books in progress" loading="lazy">
-                <figcaption>Cover grid, filtered to what you are reading</figcaption>
+                <img src="{{ asset('img/screens/grid.webp') }}" srcset="{{ asset('img/screens/grid.webp') }} 1x, {{ asset('img/screens/grid@2x.webp') }} 2x" width="540" height="1142" alt="Library in cover grid view with a mini player at the bottom" loading="lazy">
+                <figcaption>Cover grid, with the mini player always in reach</figcaption>
             </figure>
             <figure class="screen">
-                <img src="{{ asset('img/screens/stats.webp') }}" srcset="{{ asset('img/screens/stats.webp') }} 1x, {{ asset('img/screens/stats@2x.webp') }} 2x" width="540" height="1142" alt="Listening stats: today, streak, this week, all time and a 30-day chart" loading="lazy">
-                <figcaption>Stats with a daily goal, streak and 30-day chart</figcaption>
-            </figure>
-            <figure class="screen">
-                <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1142" alt="Now playing screen with chapter, progress and controls" loading="lazy">
+                <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1142" alt="Now playing screen: cover, chapter 6 of 14, gradient progress bar, 10 second skips, speed, timer, chapters and bookmark" loading="lazy">
                 <figcaption>Player with chapters, timer, bookmarks and transcript</figcaption>
+            </figure>
+            <figure class="screen">
+                <img src="{{ asset('img/screens/transcript.webp') }}" srcset="{{ asset('img/screens/transcript.webp') }} 1x, {{ asset('img/screens/transcript@2x.webp') }} 2x" width="540" height="1142" alt="Transcript sheet with timestamped passages, the current line highlighted, and a search box for the whole book" loading="lazy">
+                <figcaption>Transcripts: read along, tap to jump, search the book</figcaption>
+            </figure>
+            <figure class="screen">
+                <img src="{{ asset('img/screens/stats.webp') }}" srcset="{{ asset('img/screens/stats.webp') }} 1x, {{ asset('img/screens/stats@2x.webp') }} 2x" width="540" height="1142" alt="Listening stats: 1h 26m today against a 30 minute goal, 24 day streak, 30 day chart, and the On the shelf card" loading="lazy">
+                <figcaption>Stats with a daily goal, streak, 30-day chart and your shelf</figcaption>
+            </figure>
+            <figure class="screen">
+                <img src="{{ asset('img/screens/achievements.webp') }}" srcset="{{ asset('img/screens/achievements.webp') }} 1x, {{ asset('img/screens/achievements@2x.webp') }} 2x" width="540" height="1142" alt="Achievements screen: 15 of 56 unlocked, grouped by Time in the chair and Books, with progress bars on locked ones" loading="lazy">
+                <figcaption>56 achievements in seven groups, progress shown on each</figcaption>
             </figure>
         </div>
     </div>

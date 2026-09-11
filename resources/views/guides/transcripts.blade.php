@@ -7,6 +7,10 @@
 ])
 
 @section('body')
+<figure class="guide-figure guide-figure--phone">
+    <img src="{{ asset('img/screens/transcript.webp') }}" srcset="{{ asset('img/screens/transcript.webp') }} 1x, {{ asset('img/screens/transcript@2x.webp') }} 2x" width="540" height="1142" alt="The transcript sheet for chapter 6: timestamped passages, the line being spoken highlighted, Transcribe again and Whole book buttons, and a search box" loading="lazy">
+</figure>
+
 <h2 id="what-it-does">What you can do with a transcript</h2>
 <ul>
     <li><strong>Read along.</strong> The transcript follows playback, with the passage being spoken highlighted and kept in view.</li>
