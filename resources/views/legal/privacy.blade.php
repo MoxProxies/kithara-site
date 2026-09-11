@@ -25,7 +25,7 @@
 @endphp
 
 @section('document')
-<p>This Privacy Policy explains how <strong>{{ $company }}</strong> ("<strong>we</strong>", "<strong>us</strong>") handles information in relation to the Appollo Android application (the "<strong>App</strong>") and this website (the "<strong>Site</strong>"). Where we act as a data controller, it is only for the small amount of data described in section 6.</p>
+<p>This Privacy Policy explains how <strong>{{ $company }}</strong>, a company incorporated in {{ config('appollo.province') }}, Canada ("<strong>we</strong>", "<strong>us</strong>"), handles information in relation to the Appollo Android application (the "<strong>App</strong>") and this website (the "<strong>Site</strong>"). We follow Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) and, where they apply to you, the GDPR, the UK GDPR and comparable laws. Where we act as a data controller, it is only for the small amount of data described in section 7.</p>
 
 <h2 id="summary">1. The short version</h2>
 <ul>
@@ -74,7 +74,7 @@
     <li><strong>Contact messages</strong>: your name, email address, chosen topic and message when you use the contact form or email us. We use these to reply to you and to refer back to previous support conversations. Legal basis: our legitimate interest in responding to enquiries.</li>
     <li><strong>Server logs</strong>: our hosting provider records the IP address, browser and pages requested for each visit, for security and debugging. Legal basis: our legitimate interest in keeping the Site secure.</li>
 </ul>
-<p>We use a hosting provider and an email delivery provider to run the Site and the contact form. They process this data on our behalf under contract. We do not sell personal data and do not share it with anyone else, except where required by law.</p>
+<p>We use a hosting provider and an email delivery provider to run the Site and the contact form. They process this data on our behalf under contract, and their servers may be located outside Canada, including in the United States and the European Union. Data held there is subject to the laws of that country and may be accessible to its authorities. We do not sell personal data and do not share it with anyone else, except where required by law.</p>
 
 <h2 id="retention">8. How long we keep it</h2>
 <ul>
@@ -84,7 +84,7 @@
 </ul>
 
 <h2 id="rights">9. Your rights</h2>
-<p>Depending on where you live, you may have the right to access, correct, delete or receive a copy of the personal data we hold about you, to object to or restrict certain processing, and to lodge a complaint with your local data protection authority (in the UK, the <a href="https://ico.org.uk" rel="noopener">Information Commissioner's Office</a>).</p>
+<p>You have the right to ask what personal data we hold about you, to have it corrected, and to withdraw consent or ask for it to be deleted. Depending on where you live you may also have the right to receive a copy in a portable format, to object to or restrict certain processing, and to complain to a privacy regulator: in Canada, the <a href="https://www.priv.gc.ca" rel="noopener">Office of the Privacy Commissioner of Canada</a>; in the UK, the Information Commissioner's Office; in the EU, your national supervisory authority.</p>
 <p>In practice, the only data we hold is contact correspondence. Email <a href="mailto:{{ $email }}">{{ $email }}</a> and we will respond within 30 days. We may ask you to verify your identity first.</p>
 <p><strong>California residents:</strong> we do not sell or share personal information as defined by the CCPA/CPRA, and we do not discriminate against you for exercising your rights.</p>
 

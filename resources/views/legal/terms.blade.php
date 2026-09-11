@@ -91,7 +91,7 @@
 <p><strong>Please back up your files.</strong> While we take care with your data, we are not responsible for the loss of audio files, listening positions, statistics or transcripts, whether stored on your device or on a server you connect to.</p>
 
 <h2 id="liability">11. Limitation of liability</h2>
-<p>To the fullest extent permitted by law, {{ $company }} and its officers, employees and contractors will not be liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits or goodwill, arising out of or relating to your use of the Service. Our total liability for any claim relating to the Service is limited to the greater of (a) the amount you paid us in the 12 months before the claim arose, or (b) £50 (or the equivalent in your local currency).</p>
+<p>To the fullest extent permitted by law, {{ $company }} and its officers, employees and contractors will not be liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits or goodwill, arising out of or relating to your use of the Service. Our total liability for any claim relating to the Service is limited to the greater of (a) the amount you paid us in the 12 months before the claim arose, or (b) CA$50 (or the equivalent in your local currency).</p>
 <p>Nothing in these Terms excludes or limits liability that cannot be excluded by law, including liability for death or personal injury caused by negligence, or for fraud.</p>
 
 <h2 id="termination">12. Termination</h2>
@@ -101,7 +101,7 @@
 <p>We may update these Terms from time to time. If we make material changes we will post the new version on the Site at least 14 days before they take effect. Continued use of the Service after that date means you accept the updated Terms.</p>
 
 <h2 id="law">14. Governing law</h2>
-<p>These Terms are governed by the laws of {{ config('appollo.jurisdiction') }}, and the courts of {{ config('appollo.jurisdiction') }} have exclusive jurisdiction over any dispute, without prejudice to any mandatory consumer-protection rights you have in your country of residence.</p>
+<p>These Terms are governed by the laws of the Province of {{ config('appollo.province') }} and the federal laws of Canada applicable in it, without regard to conflict-of-law rules. You agree that the courts of {{ config('appollo.province') }} have exclusive jurisdiction over any dispute arising from the Service, without prejudice to any mandatory consumer-protection rights you have where you live. If you are a consumer in a jurisdiction whose law does not allow a clause in these Terms, that clause applies to you only to the extent permitted.</p>
 
 <h2 id="contact">15. Contact us</h2>
 <p>Questions about these Terms? Email us at <a href="mailto:{{ $email }}">{{ $email }}</a> or use the <a href="{{ route('contact') }}">contact form</a>.</p>

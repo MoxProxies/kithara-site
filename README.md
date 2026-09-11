@@ -33,9 +33,9 @@ Run the tests with `php artisan test`.
 All company-specific details are read from `.env` via `config/appollo.php`, so nothing needs editing in the views:
 
 ```dotenv
-APPOLLO_COMPANY_NAME="Appollo Ltd"                 # legal entity shown in T&Cs, privacy, footer
+APPOLLO_COMPANY_NAME="Charitou Multimedia Solutions Inc."  # legal entity shown in T&Cs, privacy, footer
 APPOLLO_COMPANY_ADDRESS="123 Example Street, ..."  # optional, shown at the end of legal pages
-APPOLLO_JURISDICTION="England and Wales"           # governing law in the T&Cs
+APPOLLO_PROVINCE=Ontario                            # province whose law governs the T&Cs
 APPOLLO_SUPPORT_EMAIL=support@appollo.app           # public support address
 APPOLLO_CONTACT_TO=hello@appollo.app                # where contact form submissions are sent
 APPOLLO_PLAY_STORE_URL=#                            # Google Play link

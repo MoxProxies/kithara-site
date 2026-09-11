@@ -12,11 +12,12 @@
 
 return [
 
-    'company_name' => env('APPOLLO_COMPANY_NAME', 'Appollo'),
+    'company_name' => env('APPOLLO_COMPANY_NAME', 'Charitou Multimedia Solutions Inc.'),
 
     'company_address' => env('APPOLLO_COMPANY_ADDRESS', ''),
 
-    'jurisdiction' => env('APPOLLO_JURISDICTION', 'England and Wales'),
+    // Canadian province whose law governs the Terms. Canada itself is assumed.
+    'province' => env('APPOLLO_PROVINCE', 'Ontario'),
 
     // Shown publicly on the contact page and in the legal documents.
     'support_email' => env('APPOLLO_SUPPORT_EMAIL', 'support@example.com'),
