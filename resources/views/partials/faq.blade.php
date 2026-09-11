@@ -15,7 +15,7 @@
         ],
         [
             'Do I need an account?',
-            'No. There is no Kithara account, no sign-up and no analytics. The only network requests the app makes are to servers you add yourself, such as your own Audiobookshelf.',
+            'No. There is no Kithara account, no sign-up and no analytics. The only network requests the app makes are to servers you add yourself, such as your own Audiobookshelf, and to LibriVox and the Internet Archive if you add the LibriVox library.',
         ],
         [
             'How does Kithara find chapters?',

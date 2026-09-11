@@ -212,7 +212,7 @@
         <div class="section-head" style="margin-bottom: 0;" data-reveal>
             <span class="eyebrow">Privacy</span>
             <h2>Your listening is nobody's business</h2>
-            <p>No analytics, no accounts, no telemetry, no ads. Kithara talks to the servers you add and nothing else, apart from a one-time speech model download if you use transcripts. Read the <a href="{{ route('privacy') }}">privacy policy</a>; it is short.</p>
+            <p>No analytics, no accounts, no telemetry, no ads. Kithara talks to the servers you add, and to LibriVox if you add it, and nothing else apart from a one-time speech model download if you use transcripts. Read the <a href="{{ route('privacy') }}">privacy policy</a>; it is short.</p>
         </div>
     </div>
 </section>
