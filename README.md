@@ -54,7 +54,7 @@ The "Last updated" date on the legal pages is set in `config/kithara.php`.
 - `resources/views/partials/faq.blade.php`: the FAQ section and its `FAQPage` JSON-LD come from one array. Edit the questions there and both update.
 - `resources/docs/sync-protocol.md` is the site copy of the app repo's `docs/kithara-sync-protocol.md`, rendered with `Str::markdown()`. Re-copy it when the spec changes.
 - `public/img/og.png` is the 1200x630 share image, cropped from the Play feature graphic in the app repo (`store/feature-graphic-1024x500.png`).
-- Fonts are self-hosted through the Vite plugin (`vite.config.js`), so no visitor data goes to a font CDN. `npm run build` downloads them.
+- Fonts are self-hosted from `resources/fonts/` (woff2, Latin subset) through the Vite plugin's `local()` provider in `vite.config.js`, so no visitor data goes to a font CDN and the build needs no network. Only the above-the-fold weights are preloaded.
 - After the first deploy, submit `https://kithara-app.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and set `expose_php = Off` in Forge's PHP settings to drop the `X-Powered-By` header.
 
 ## Deploying on Laravel Forge
