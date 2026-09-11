@@ -1,1 +1,1 @@
-<img class="brand-mark" src="{{ asset('logo.svg') }}" alt="" width="40" height="42">
+<img class="brand-mark" src="{{ asset('logo.svg') }}" alt="" width="36" height="37">
