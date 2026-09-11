@@ -13,6 +13,6 @@
             <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
         </ul>
 
-        <p class="copyright">&copy; {{ date('Y') }} {{ config('appollo.company_name') }}. All rights reserved.</p>
+        <p class="copyright">&copy; {{ date('Y') }} {{ rtrim(config('appollo.company_name'), '.') }}. All rights reserved.</p>
     </div>
 </footer>
