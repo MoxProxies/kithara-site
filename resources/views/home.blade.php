@@ -216,11 +216,25 @@
                 </div>
             @else
                 <h2>Coming soon to Google Play</h2>
-                <p>Kithara is in review with Google Play. Want to know the moment it lands, or get in early as a tester? Drop us a line.</p>
-                <div class="hero-actions">
-                    <a href="{{ route('contact') }}" class="btn btn-primary">Get in touch</a>
-                    <a href="#features" class="btn btn-ghost">See what it does</a>
-                </div>
+                <p>Kithara is in review with Google Play. Leave your email and we will send one message the day it lands, then forget you.</p>
+
+                @if (session('notify_status'))
+                    <p class="notify-status ok" role="status">{{ session('notify_status') }}</p>
+                @else
+                    <form class="notify" method="POST" action="{{ route('notify') }}" novalidate>
+                        @csrf
+                        <label for="notify-email" class="sr-only">Email address</label>
+                        <input type="email" id="notify-email" name="email" value="{{ old('email') }}" placeholder="you@example.com" autocomplete="email" required maxlength="255" @error('email') aria-invalid="true" aria-describedby="notify-error" @enderror>
+                        <div class="hp" aria-hidden="true">
+                            <label for="notify-website">Website</label>
+                            <input type="text" id="notify-website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Notify me</button>
+                    </form>
+                    @error('email')<p class="notify-status err" id="notify-error" role="alert">{{ $message }}</p>@enderror
+                    @error('website')<p class="notify-status err" role="alert">{{ $message }}</p>@enderror
+                    <p class="notify-note">Want in early as a tester? <a href="{{ route('contact') }}">Get in touch</a> instead.</p>
+                @endif
             @endif
         </div>
     </div>

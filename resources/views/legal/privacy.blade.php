@@ -72,6 +72,7 @@
 <p>The Site is the one place we collect personal data:</p>
 <ul>
     <li><strong>Contact messages</strong>: your name, email address, chosen topic and message when you use the contact form or email us. We use these to reply to you and to refer back to previous support conversations. Legal basis: our legitimate interest in responding to enquiries.</li>
+    <li><strong>Launch notifications</strong>: if you leave your email address on the "coming soon" form, we store it so we can send you one message when the App is released on Google Play. We do not use it for anything else, and we delete the list within 30 days of sending that message. Legal basis: your consent, which you can withdraw at any time by emailing us.</li>
     <li><strong>Server logs</strong>: our hosting provider records the IP address, browser and pages requested for each visit, for security and debugging. Legal basis: our legitimate interest in keeping the Site secure.</li>
 </ul>
 <p>We use a hosting provider and an email delivery provider to run the Site and the contact form. They process this data on our behalf under contract, and their servers may be located outside Canada, including in the United States and the European Union. Data held there is subject to the laws of that country and may be accessible to its authorities. We do not sell personal data and do not share it with anyone else, except where required by law.</p>
@@ -79,6 +80,7 @@
 <h2 id="retention">8. How long we keep it</h2>
 <ul>
     <li><strong>Contact messages</strong>: up to 2 years, so we can refer back to previous support conversations.</li>
+    <li><strong>Launch notification emails</strong>: until 30 days after the release announcement is sent.</li>
     <li><strong>Server logs</strong>: up to 90 days.</li>
     <li><strong>App data</strong>: on your device until you delete it or uninstall the App. Transcripts and speech models can be deleted individually from within the App. We hold none of it.</li>
 </ul>
