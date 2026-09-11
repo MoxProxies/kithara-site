@@ -36,7 +36,7 @@
 <p>The models are English only for now. Transcription of other languages is not supported yet.</p>
 
 <h2 id="privacy">Privacy</h2>
-<p>Everything runs on the device. The only network request involved is the one-time model download, which comes from a public mirror maintained by the sherpa-onnx project on Hugging Face; like any download, it shows them your IP address and the file requested, and nothing else. Your audio, your transcripts and your searches never leave the phone. Details are in the <a href="{{ route('privacy') }}#app">privacy policy</a>.</p>
+<p>Everything runs on the device. The only network requests involved are the one-time model downloads: the Whisper model from a public mirror maintained by the sherpa-onnx project on Hugging Face, and a small voice-activity model from the same project's releases on GitHub. Like any download, each shows that host your IP address and the file requested, and nothing else. Your audio, your transcripts and your searches never leave the phone. Details are in the <a href="{{ route('privacy') }}#app">privacy policy</a>.</p>
 
 <h2 id="tips">Good to know</h2>
 <ul>

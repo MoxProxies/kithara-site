@@ -109,7 +109,7 @@ The contact and notify-me endpoints are rate-limited to 5 submissions per minute
 
 ## Releasing a new version
 
-Add an entry to the top of `resources/changelog/releases.php` (version, date, status, summary, changes). The changelog page, the RSS feed and the `softwareVersion` in the structured data pick it up on deploy. Set `status` to `released` and fill in `date` when the build is live on Google Play; until then it shows as "in review" with no date.
+Add an entry to the top of `resources/changelog/releases.php` (version, date, status, summary, changes). The changelog page, the RSS feed and the `softwareVersion` in the structured data pick it up on deploy. Set `status` to `released` and fill in `date` when the build is live on Google Play; until then it shows as "coming soon" with no date.
 
 ## Launch day
 

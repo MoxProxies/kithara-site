@@ -7,9 +7,9 @@
 |
 | Newest first. Add an entry when a build goes to Google Play; the changelog
 | page, the RSS feed and the softwareVersion in the structured data all read
-| from here. `date` is null while a version is still in review.
+| from here. `date` is null until a version has shipped.
 |
-| Keys: version, date (Y-m-d or null), status ('in review' | 'released'),
+| Keys: version, date (Y-m-d or null), status ('coming soon' | 'released'),
 |       summary (one sentence), changes (list of short lines).
 |
 */
@@ -18,7 +18,7 @@ return [
     [
         'version' => '1.0.0',
         'date' => null,
-        'status' => 'in review',
+        'status' => 'coming soon',
         'summary' => 'The first release: a player for the audiobook files you own, with Audiobookshelf and self-hosted server support, chapters read from the files, and on-device transcripts.',
         'changes' => [
             'Libraries: a folder on the device, an Audiobookshelf server, or a server speaking the Kithara sync protocol. Several at once, each with its own tab.',

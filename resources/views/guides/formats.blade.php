@@ -18,7 +18,7 @@
 <ul>
     <li><strong>A folder of numbered files is one book</strong> on one continuous timeline. Skip back ten seconds at the very start of part three and you land at the end of part two, not at 0:00.</li>
     <li><strong>Natural sort.</strong> "Track 2" comes before "Track 10", so books ripped without zero-padding still play in order.</li>
-    <li><strong>Each .m4b is its own book</strong> by default. If your rips are split into "Part 1" and "Part 2" m4b files, a switch in Settings, Libraries treats the folder as one book instead.</li>
+    <li><strong>Each .m4b is its own book</strong> by default. If your rips are split into "Part 1" and "Part 2" m4b files, a switch under Settings, Library &amp; sync treats the folder as one book instead.</li>
     <li><strong>Metadata from tags.</strong> Title, author, narrator, album and duration are read from the file tags, so a well-tagged library needs no renaming.</li>
     <li><strong>Cover art</strong> comes from embedded artwork first, then a <code>cover.jpg</code> or <code>folder.jpg</code> beside the files, then the server if there is one.</li>
     <li><strong>Rescans never lose your place.</strong> Books are identified by a stable id derived from where they live, so rescanning a folder updates them in place.</li>
