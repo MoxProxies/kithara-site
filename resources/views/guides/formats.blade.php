@@ -46,6 +46,9 @@
 <p>Kithara does not re-parse a streamed file over the network for chapters; server libraries should supply them.</p>
 
 <h2 id="playback">Playback details</h2>
+<figure class="guide-figure guide-figure--narrow">
+    <img src="{{ asset('img/mockups/speed-pixel.webp') }}" srcset="{{ asset('img/mockups/speed-pixel.webp') }} 1x, {{ asset('img/mockups/speed-pixel@2x.webp') }} 2x" width="520" height="646" alt="The playback speed sheet on a Pixel: a slider from 0.5x with preset chips for 0.8x to 2.5x, and a note that pitch is preserved and speed is remembered per book" loading="lazy">
+</figure>
 <ul>
     <li>Speed from 0.5x to 3.5x with pitch preserved, remembered per book. Skip silence is a separate switch.</li>
     <li>Skip intervals are configurable independently for back and forward: 5, 10, 15, 30 or 60 seconds.</li>

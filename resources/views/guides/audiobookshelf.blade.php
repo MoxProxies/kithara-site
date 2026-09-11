@@ -7,6 +7,10 @@
 ])
 
 @section('body')
+<figure class="guide-figure">
+    <img src="{{ asset('img/mockups/library-isometric.webp') }}" srcset="{{ asset('img/mockups/library-isometric.webp') }} 1x, {{ asset('img/mockups/library-isometric@2x.webp') }} 2x" width="800" height="387" alt="An Android phone lying flat showing a Kithara library in grid view: covers with progress bars, filter chips, and the mini player" loading="lazy">
+</figure>
+
 <h2 id="what-you-get">What you get</h2>
 <ul>
     <li><strong>Your library, as a tab.</strong> Titles, authors, narrators, series, covers and chapter lists come from the server. You can keep a local folder library open in another tab at the same time.</li>

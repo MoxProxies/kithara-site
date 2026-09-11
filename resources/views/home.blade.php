@@ -17,8 +17,8 @@
             <p class="hero-note">Free to listen, with no ads and no time limit. No account, no analytics, no telemetry.</p>
         </div>
 
-        <div class="phone">
-            <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1142" alt="Kithara playing The Cartographer's Daughter: chapter list, progress bar, 10 second skips, speed, sleep timer, bookmarks and transcript controls" fetchpriority="high">
+        <div class="phone phone--shot">
+            <img src="{{ asset('img/mockups/player-samsung.webp') }}" srcset="{{ asset('img/mockups/player-samsung.webp') }} 1x, {{ asset('img/mockups/player-samsung@2x.webp') }} 2x" width="420" height="684" alt="Kithara's player on an Android phone: cover art, chapter 6 of 14, progress bar, 10 second skips, speed, sleep timer, chapters and bookmark controls" fetchpriority="high">
         </div>
     </div>
 </section>
