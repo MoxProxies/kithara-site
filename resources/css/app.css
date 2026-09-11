@@ -731,3 +731,26 @@ code {
   .progress-bar { display: none; }
   .screen img, .site-header { transition: none; }
 }
+
+/* "Coming soon" stand-in for the store button while the Play listing is in review */
+.btn-soon {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  cursor: default;
+}
+.btn-soon:hover { transform: none; }
+.soon-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 0 rgba(243, 178, 16, 0.6);
+  animation: soon-pulse 2.2s ease-out infinite;
+}
+@keyframes soon-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(243, 178, 16, 0.6); }
+  70%  { box-shadow: 0 0 0 8px rgba(243, 178, 16, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(243, 178, 16, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .soon-dot { animation: none; } }

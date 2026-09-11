@@ -208,11 +208,20 @@
 <section class="section" id="download">
     <div class="container">
         <div class="cta-band" data-reveal>
-            <h2>Ready for your next chapter?</h2>
-            <p>Download Kithara for Android and bring your whole library with you.</p>
-            <div class="hero-actions">
-                @include('partials.store-buttons')
-            </div>
+            @if (config('kithara.play_live'))
+                <h2>Ready for your next chapter?</h2>
+                <p>Download Kithara for Android and bring your whole library with you.</p>
+                <div class="hero-actions">
+                    @include('partials.store-buttons')
+                </div>
+            @else
+                <h2>Coming soon to Google Play</h2>
+                <p>Kithara is in review with Google Play. Want to know the moment it lands, or get in early as a tester? Drop us a line.</p>
+                <div class="hero-actions">
+                    <a href="{{ route('contact') }}" class="btn btn-primary">Get in touch</a>
+                    <a href="#features" class="btn btn-ghost">See what it does</a>
+                </div>
+            @endif
         </div>
     </div>
 </section>

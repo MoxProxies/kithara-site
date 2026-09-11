@@ -74,7 +74,11 @@
             </div>
             <div class="info-card">
                 <h3>Billing &amp; refunds</h3>
-                <p>Purchases are handled by Google Play. For refunds, request them through Google Play; we can help point you in the right direction.</p>
+                @if (config('kithara.play_live'))
+                    <p>Purchases are handled by Google Play. For refunds, request them through Google Play; we can help point you in the right direction.</p>
+                @else
+                    <p>Kithara is not on Google Play yet. Once it is, purchases and refunds will be handled there. Nothing to bill until then.</p>
+                @endif
             </div>
             <div class="info-card">
                 <h3>Legal</h3>
