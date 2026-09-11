@@ -5,8 +5,10 @@
 <section class="hero">
     <div class="container hero-grid">
         <div>
-            <span class="eyebrow">Audiobook player for Android</span>
-            <h1>Your library.<br>Your pace.<br><span class="type" data-type-cycle='["In your pocket.","In your car.","Where you left off.","On your terms.","Always with you."]'>In your pocket.</span></h1>
+            <h1>
+                <span class="eyebrow">Kithara, the audiobook player for Android</span>
+                <span class="display">Your library.<br>Your pace.<br><span class="type" data-type-cycle='["In your pocket.","In your car.","Where you left off.","On your terms.","Always with you."]'>In your pocket.</span></span>
+            </h1>
             <p class="lead">Point Kithara at a folder on your phone, a server on your home network, or both. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
             <div class="hero-actions">
                 @include('partials.store-buttons')
@@ -193,8 +195,10 @@
     </div>
 </section>
 
+@include('partials.faq')
+
 {{-- Privacy --}}
-<section class="section section-alt">
+<section class="section">
     <div class="container">
         <div class="section-head" style="margin-bottom: 0;" data-reveal>
             <span class="eyebrow">Privacy</span>

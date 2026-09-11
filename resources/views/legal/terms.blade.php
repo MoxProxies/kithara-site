@@ -1,6 +1,6 @@
 @extends('layouts.legal', [
     'title' => 'Terms & Conditions',
-    'intro' => 'The rules for using the Kithara app and this website. Please read them; they set out what you can expect from us and what we expect from you.',
+    'intro' => 'The terms for using the Kithara Android app and this website: your licence, the files and servers you bring, Google Play purchases and refunds, and the limits of our liability under Ontario law.',
     'sections' => [
         'acceptance' => '1. Acceptance of these terms',
         'eligibility' => '2. Who can use Kithara',

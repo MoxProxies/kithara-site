@@ -5,6 +5,7 @@
 @extends('layouts.app')
 
 @section('title', $title)
+@section('meta_description', $intro)
 
 @section('content')
 <section class="page-head">

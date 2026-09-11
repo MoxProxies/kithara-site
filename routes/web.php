@@ -17,3 +17,8 @@ Route::post('/notify', [NotifyController::class, 'store'])
 
 Route::view('/terms', 'legal.terms')->name('terms');
 Route::view('/privacy', 'legal.privacy')->name('privacy');
+
+// Crawler-facing files, generated so they always carry the right host.
+Route::get('/sitemap.xml', fn () => response()->view('crawlers.sitemap')->header('Content-Type', 'application/xml'))->name('sitemap');
+Route::get('/robots.txt', fn () => response()->view('crawlers.robots')->header('Content-Type', 'text/plain'))->name('robots');
+Route::get('/llms.txt', fn () => response()->view('crawlers.llms')->header('Content-Type', 'text/plain; charset=utf-8'))->name('llms');

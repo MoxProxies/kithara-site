@@ -10,6 +10,7 @@ Laravel 13 site for Kithara, the Android audiobook player: landing page, contact
 | `/contact` | `resources/views/contact.blade.php` | Form → `ContactController` → `ContactMessage` mailable |
 | `/terms`   | `resources/views/legal/terms.blade.php`   | Uses the shared `layouts/legal` chrome |
 | `/privacy` | `resources/views/legal/privacy.blade.php` | Uses the shared `layouts/legal` chrome |
+| `/sitemap.xml`, `/robots.txt`, `/llms.txt` | `resources/views/crawlers/` | Generated, so they carry the deployed host |
 
 Styles live in `resources/css/app.css` (plain CSS, no Tailwind) and are bundled by Vite.
 
@@ -43,6 +44,14 @@ KITHARA_PLAY_STORE_URL=#                            # Google Play link, used onc
 ```
 
 The "Last updated" date on the legal pages is set in `config/kithara.php`.
+
+## SEO and structured data
+
+- `resources/views/partials/schema.blade.php`: Organization, WebSite and SoftwareApplication JSON-LD on every page. The Play Store `installUrl` appears once `KITHARA_PLAY_LIVE=true`.
+- `resources/views/partials/faq.blade.php`: the FAQ section and its `FAQPage` JSON-LD come from one array. Edit the questions there and both update.
+- `public/img/og.png` is the 1200x630 share image, cropped from the Play feature graphic in the app repo (`store/feature-graphic-1024x500.png`).
+- Fonts are self-hosted through the Vite plugin (`vite.config.js`), so no visitor data goes to a font CDN. `npm run build` downloads them.
+- After the first deploy, submit `https://kithara-app.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools, and set `expose_php = Off` in Forge's PHP settings to drop the `X-Powered-By` header.
 
 ## Deploying on Laravel Forge
 

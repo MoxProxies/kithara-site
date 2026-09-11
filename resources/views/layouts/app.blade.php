@@ -3,23 +3,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@hasSection('title')@yield('title') · Kithara @else Kithara, an audiobook player for Android @endif</title>
-    <meta name="description" content="@yield('meta_description', 'Kithara is an audiobook player for Android. Point it at a folder, an Audiobookshelf server, or both. It finds your books, reads the chapters out of the files, and keeps your position in step across devices.')">
+    <script>document.documentElement.classList.add('js')</script>
+
+    @php
+        // yieldContent() returns escaped HTML; decode once so {{ }} below does not double-escape.
+        $title = html_entity_decode(trim($__env->yieldContent('title')), ENT_QUOTES | ENT_HTML5);
+        $pageTitle = $title !== '' ? "{$title} · Kithara" : 'Kithara: Audiobook Player for Android with Audiobookshelf Sync';
+        $description = html_entity_decode(trim($__env->yieldContent('meta_description', 'Kithara is a free audiobook player for Android. Point it at a folder on your phone, an Audiobookshelf server, or both. It reads chapters out of the files themselves and keeps your place in step across devices. No account, no analytics.')), ENT_QUOTES | ENT_HTML5);
+        $ogImage = asset('img/og.png');
+    @endphp
+
+    <title>{{ $pageTitle }}</title>
+    <meta name="description" content="{{ $description }}">
     <meta name="theme-color" content="#100b13">
+    <link rel="canonical" href="{{ url()->current() }}">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Kithara">
-    <meta property="og:title" content="@yield('title', 'Kithara, an audiobook player for Android')">
-    <meta property="og:description" content="@yield('meta_description', 'An audiobook player for Android that works with local folders and Audiobookshelf.')">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ $description }}">
     <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ $ogImage }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Kithara lyre-and-book mark on a magenta background with the tagline: Your audiobooks. Your files. Your server.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $pageTitle }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ $ogImage }}">
 
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    @include('partials.schema')
+    @stack('head')
 
+    {{ Vite::fonts() }}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
