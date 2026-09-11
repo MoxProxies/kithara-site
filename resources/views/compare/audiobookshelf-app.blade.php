@@ -37,7 +37,7 @@
     <li><strong>You listen offline a lot.</strong> Kithara's sync rule is written for flights and dead zones: the phone pushes before it pulls, and a stale server timestamp can never rewind you.</li>
     <li><strong>You want transcripts.</strong> Search a book for a phrase, read along with the current line highlighted, tap to jump. All on the phone.</li>
     <li><strong>You like the stats on the device.</strong> Daily goal, streaks and achievements work with no server involved, and the history is kept from day one.</li>
-    <li><strong>You might build your own server one day.</strong> Kithara also speaks a <a href="{{ route('sync-protocol') }}">six-route protocol</a> that a small script can implement.</li>
+    <li><strong>You might build your own server one day.</strong> Kithara also speaks an <a href="{{ route('sync-protocol') }}">open sync protocol</a> that a small script can implement, with two-way bookmarks.</li>
 </ul>
 
 <h2 id="both">Or use both</h2>

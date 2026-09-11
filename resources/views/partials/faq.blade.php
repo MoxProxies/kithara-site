@@ -31,7 +31,7 @@
         ],
         [
             'Will my position sync between my phone and tablet?',
-            'With a server library, yes: position, finished state and bookmarks sync through Audiobookshelf or a Kithara sync server, and unpushed local changes always win, so listening offline never rewinds you. Listening stats and achievements stay on each device.',
+            'With a server library, yes: position and finished state sync through Audiobookshelf or a Kithara sync server, and unpushed local changes always win, so listening offline never rewinds you. Bookmarks sync both ways with a Kithara server and push one way to Audiobookshelf. Listening stats and achievements stay on each device.',
         ],
         [
             'What are transcripts?',

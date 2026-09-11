@@ -16,7 +16,7 @@ class GuidePagesTest extends TestCase
             'transcripts' => ['/transcripts', 'Choosing a model'],
             'formats' => ['/formats', 'Where chapters come from'],
             'android-auto' => ['/android-auto', 'Voice search'],
-            'sync-protocol' => ['/sync-protocol', 'How conflicts are resolved'],
+            'sync-protocol' => ['/sync-protocol', 'How a client resolves conflicts'],
             'changelog' => ['/changelog', '1.0.0'],
             'compare' => ['/compare', 'How these are written'],
             'compare.smart-audiobook-player' => ['/compare/smart-audiobook-player', 'Where Smart AudioBook Player is the better choice'],

@@ -34,7 +34,7 @@
 
 <h2 id="choose-kithara">Where Kithara is the better choice</h2>
 <ul>
-    <li><strong>Your books live on a server.</strong> Audiobookshelf, or anything you build against the six-route sync protocol, becomes a library tab next to your local folder. Stream, download, and pick up on another device.</li>
+    <li><strong>Your books live on a server.</strong> Audiobookshelf, or anything you build against the open Kithara sync protocol, becomes a library tab next to your local folder. Stream, download, and pick up on another device.</li>
     <li><strong>You listen on more than one device.</strong> Position, finished state and bookmarks sync through your server, and offline listening never gets rewound by a stale timestamp.</li>
     <li><strong>You want to find a line again.</strong> On-device transcripts let you search a whole book for a phrase and jump straight to it. Nothing leaves the phone.</li>
     <li><strong>The free tier should be a real player, not a trial.</strong> Kithara's free features do not expire; Pro adds the server and sync layer on top.</li>

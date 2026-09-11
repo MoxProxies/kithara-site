@@ -124,7 +124,7 @@
                     <li><strong>Several libraries</strong> at once, each with its own tab</li>
                     <li><strong>Transcripts:</strong> on-device speech-to-text for any chapter</li>
                     <li><strong>Listening stats</strong> with a daily goal, streaks and a 30-day chart</li>
-                    <li><strong>24 achievements</strong> across time, streaks and listening style</li>
+                    <li><strong>56 achievements</strong> across time, books, streaks, feats, odd hours, style and your shelf</li>
                     <li><strong>Themes:</strong> light, dark, accent colours, or colours from your wallpaper</li>
                 </ul>
             </div>

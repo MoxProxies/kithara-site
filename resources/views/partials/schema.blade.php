@@ -35,7 +35,7 @@
             'Sleep timer with fade-out and shake to extend',
             'Android Auto with voice search',
             'On-device Whisper transcripts (Pro)',
-            'Listening statistics and achievements (Pro)',
+            'Listening statistics and 56 achievements (Pro)',
             'No account, no analytics, no telemetry',
         ],
         'screenshot' => [

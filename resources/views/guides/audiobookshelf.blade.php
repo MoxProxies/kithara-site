@@ -42,10 +42,10 @@
 <h2 id="limits">What does not sync</h2>
 <ul>
     <li><strong>Listening statistics and achievements</strong> stay on each device. Merging daily totals across phones needs more than last-write-wins, so it is deliberately not done yet.</li>
-    <li><strong>Bookmarks push but are not read back.</strong> Bookmarks you make on the phone reach the server; bookmarks made elsewhere do not appear in Kithara yet.</li>
+    <li><strong>Bookmarks are one-way with Audiobookshelf.</strong> Bookmarks you make on the phone reach the server; bookmarks made elsewhere do not appear in Kithara yet, and deleting one on the phone does not delete it on the server. (Kithara sync servers do both.)</li>
 </ul>
 
 <h2 id="compatibility">Compatibility</h2>
 <p>Kithara is written against the Audiobookshelf v2 API. Audiobookshelf is an independent open-source project and is not affiliated with Kithara. If a call starts failing after a server upgrade, <a href="{{ route('contact') }}">let us know</a> which version you are running; the endpoints live in one place and are quick to adjust.</p>
-<p>Prefer a server that does exactly what you need and nothing else? Kithara also speaks a <a href="{{ route('sync-protocol') }}">six-route sync protocol</a> you can implement in an afternoon.</p>
+<p>Prefer a server that does exactly what you need and nothing else? Kithara also speaks an <a href="{{ route('sync-protocol') }}">open sync protocol</a> you can implement in an afternoon.</p>
 @endsection

@@ -7,7 +7,7 @@
 - Platform: Android 8.0 or later. No iOS version.
 - Price: free with no ads or time limits. Kithara Pro is a one-time in-app purchase through Google Play (not a subscription).
 - Free: playback, chapters, speed, skip silence, sleep timer with fade and shake-to-extend, Android Auto, Bluetooth and notification controls, bookmarks, search, one folder on the device.
-- Pro: Audiobookshelf and Kithara sync-server libraries, streaming, downloads, cross-device position sync, multiple libraries, listening stats, achievements, on-device Whisper transcripts, themes.
+- Pro: Audiobookshelf and Kithara sync-server libraries, streaming, downloads, cross-device position sync (bookmarks too on Kithara servers), multiple libraries, listening stats with a per-library shelf card, 56 achievements, on-device Whisper transcripts, themes.
 - Formats: m4b, m4a, mp4, aac, mp3, ogg, oga, opus, flac, wav, wma, mka, 3gp. Not Audible .aax (DRM).
 - Chapters: read from m4b chpl atoms and QuickTime chapter tracks, ID3 CHAP frames, .cue sheets, or the server; multi-file books with no marks get one chapter per file.
 - Privacy: no account, no analytics, no telemetry. Only network traffic is to servers the user adds, plus a one-time speech-model download if transcripts are enabled.
@@ -21,7 +21,7 @@
 - [Transcripts]({{ route('transcripts') }}): on-device Whisper, model sizes, privacy
 - [Formats and chapters]({{ route('formats') }}): supported formats, folder conventions, chapter sources
 - [Android Auto]({{ route('android-auto') }}): car screen, voice search, Bluetooth
-- [Sync protocol]({{ route('sync-protocol') }}): the six-route HTTP spec for self-hosted servers
+- [Sync protocol]({{ route('sync-protocol') }}): version 1 of the HTTP spec for self-hosted servers
 - [Comparisons]({{ route('compare') }}): Kithara vs [Smart AudioBook Player]({{ route('compare.smart-audiobook-player') }}), [the Audiobookshelf app]({{ route('compare.audiobookshelf-app') }}) and [Audible]({{ route('compare.audible') }})
 - [Changelog]({{ route('changelog') }}): release notes, also as [RSS]({{ route('changelog.feed') }})
 - [Contact]({{ route('contact') }}): support and press
