@@ -11,16 +11,26 @@
                 <ul class="footer-links">
                     <li><a href="{{ route('home') }}#features">Features</a></li>
                     <li><a href="{{ route('pro') }}">Kithara Pro</a></li>
+                    <li><a href="{{ route('compare') }}">Comparisons</a></li>
+                    <li><a href="{{ route('changelog') }}">Changelog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Guides</h4>
+                <ul class="footer-links">
                     <li><a href="{{ route('audiobookshelf') }}">Audiobookshelf</a></li>
                     <li><a href="{{ route('transcripts') }}">Transcripts</a></li>
                     <li><a href="{{ route('formats') }}">Formats and chapters</a></li>
                     <li><a href="{{ route('android-auto') }}">Android Auto</a></li>
                     <li><a href="{{ route('sync-protocol') }}">Sync protocol</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>How-to</h4>
+                <ul class="footer-links">
                     <li><a href="{{ route('howto.audiobookshelf-setup') }}">Set up Audiobookshelf</a></li>
                     <li><a href="{{ route('howto.m4b-chapters') }}">Add chapters to an m4b</a></li>
                     <li><a href="{{ route('howto.leaving-audible') }}">Leaving Audible</a></li>
-                    <li><a href="{{ route('compare') }}">Comparisons</a></li>
-                    <li><a href="{{ route('changelog') }}">Changelog</a></li>
                 </ul>
             </div>
             <div>

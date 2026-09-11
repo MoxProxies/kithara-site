@@ -879,7 +879,8 @@ code {
 .prose table { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin: 1rem 0 1.5rem; }
 .prose table th, .prose table td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--border); }
 
-.footer-nav { display: flex; gap: 3rem; flex-wrap: wrap; }
+.footer-nav { display: grid; grid-template-columns: repeat(4, auto); gap: 2rem 3.5rem; }
+@media (max-width: 900px) { .footer-nav { grid-template-columns: repeat(2, auto); } }
 .footer-nav h4 {
   font-family: var(--font-body);
   font-size: 0.75rem;
