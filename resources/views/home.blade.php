@@ -16,7 +16,7 @@
         </div>
 
         <div class="phone">
-            <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1212" alt="Appollo playing The Cartographer's Daughter: chapter list, progress bar, 10 second skips, speed, sleep timer, bookmarks and transcript controls" fetchpriority="high">
+            <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1142" alt="Appollo playing The Cartographer's Daughter: chapter list, progress bar, 10 second skips, speed, sleep timer, bookmarks and transcript controls" fetchpriority="high">
         </div>
     </div>
 </section>
@@ -74,19 +74,19 @@
         </div>
         <div class="screens">
             <figure class="screen">
-                <img src="{{ asset('img/screens/library.webp') }}" srcset="{{ asset('img/screens/library.webp') }} 1x, {{ asset('img/screens/library@2x.webp') }} 2x" width="540" height="1212" alt="Library list with progress, time left and pinned books" loading="lazy">
+                <img src="{{ asset('img/screens/library.webp') }}" srcset="{{ asset('img/screens/library.webp') }} 1x, {{ asset('img/screens/library@2x.webp') }} 2x" width="540" height="1142" alt="Library list with progress, time left and pinned books" loading="lazy">
                 <figcaption>Library, with progress and time left at a glance</figcaption>
             </figure>
             <figure class="screen">
-                <img src="{{ asset('img/screens/grid.webp') }}" srcset="{{ asset('img/screens/grid.webp') }} 1x, {{ asset('img/screens/grid@2x.webp') }} 2x" width="540" height="1212" alt="Library in cover grid view filtered to books in progress" loading="lazy">
+                <img src="{{ asset('img/screens/grid.webp') }}" srcset="{{ asset('img/screens/grid.webp') }} 1x, {{ asset('img/screens/grid@2x.webp') }} 2x" width="540" height="1142" alt="Library in cover grid view filtered to books in progress" loading="lazy">
                 <figcaption>Cover grid, filtered to what you are reading</figcaption>
             </figure>
             <figure class="screen">
-                <img src="{{ asset('img/screens/stats.webp') }}" srcset="{{ asset('img/screens/stats.webp') }} 1x, {{ asset('img/screens/stats@2x.webp') }} 2x" width="540" height="1212" alt="Listening stats: today, streak, this week, all time and a 30-day chart" loading="lazy">
+                <img src="{{ asset('img/screens/stats.webp') }}" srcset="{{ asset('img/screens/stats.webp') }} 1x, {{ asset('img/screens/stats@2x.webp') }} 2x" width="540" height="1142" alt="Listening stats: today, streak, this week, all time and a 30-day chart" loading="lazy">
                 <figcaption>Stats with a daily goal, streak and 30-day chart</figcaption>
             </figure>
             <figure class="screen">
-                <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1212" alt="Now playing screen with chapter, progress and controls" loading="lazy">
+                <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1142" alt="Now playing screen with chapter, progress and controls" loading="lazy">
                 <figcaption>Player with chapters, timer, bookmarks and transcript</figcaption>
             </figure>
         </div>
