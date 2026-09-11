@@ -22,6 +22,7 @@
                     <li><a href="{{ route('transcripts') }}">Transcripts</a></li>
                     <li><a href="{{ route('formats') }}">Formats and chapters</a></li>
                     <li><a href="{{ route('android-auto') }}">Android Auto</a></li>
+                    <li><a href="{{ route('librivox') }}">LibriVox</a></li>
                     <li><a href="{{ route('sync-protocol') }}">Sync protocol</a></li>
                 </ul>
             </div>

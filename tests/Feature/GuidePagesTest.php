@@ -17,6 +17,7 @@ class GuidePagesTest extends TestCase
             'formats' => ['/formats', 'Where chapters come from'],
             'android-auto' => ['/android-auto', 'Voice search'],
             'sync-protocol' => ['/sync-protocol', 'How a client resolves conflicts'],
+            'librivox' => ['/librivox', 'Add to library'],
             'howto.m4b-chapters' => ['/how-to/add-chapters-to-m4b', '-map_chapters 1'],
             'howto.audiobookshelf-setup' => ['/how-to/audiobookshelf-setup', 'docker compose up -d'],
             'howto.leaving-audible' => ['/how-to/leaving-audible', 'Unused credits are forfeited'],

@@ -13,6 +13,7 @@
     ['Audiobookshelf server', 'Yes: streaming, downloads, position sync (Pro)', 'Yes, it is the reference client'],
     ['Local folders as a library', 'Yes, alongside server tabs, without a server at all', 'Local playback is built around items downloaded from the server'],
     ['Other servers', 'Anything speaking the Kithara sync protocol', 'Audiobookshelf only'],
+    ['Free public-domain catalogue', 'LibriVox built in, no server needed', 'Through your server, if you add LibriVox books to it'],
     ['Podcasts', 'No', 'Yes'],
     ['Ebooks', 'No', 'Yes, with a reader'],
     ['Position sync', 'Push first, then pull; unpushed local changes always win', 'Syncs progress with the server'],

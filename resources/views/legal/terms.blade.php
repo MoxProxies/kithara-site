@@ -83,7 +83,7 @@
 <p>If you send us feedback or suggestions, you grant us a perpetual, royalty-free licence to use them without obligation to you.</p>
 
 <h2 id="third-party">9. Third-party services and components</h2>
-<p>The App integrates with services we do not control, including Google Play, Android Auto, and any Audiobookshelf or sync server you connect to. Your use of those services is governed by their own terms and privacy policies. We are not responsible for third-party services or content.</p>
+<p>The App integrates with services we do not control, including Google Play, Android Auto, LibriVox and the Internet Archive (which supply the public-domain recordings in the LibriVox library, under their own terms), and any Audiobookshelf or sync server you connect to. Recordings from LibriVox are provided by that project and its volunteers, not by us, and we make no promises about their availability or quality. Your use of those services is governed by their own terms and privacy policies. We are not responsible for third-party services or content.</p>
 <p>The transcripts feature uses open-source speech recognition components (Whisper models and the sherpa-onnx runtime) that run on your device under their own licences, and downloads model files from a public mirror on Hugging Face. Transcripts are generated automatically by a machine and will contain errors, especially with names, accents and background noise. They are provided for your personal convenience only and are not a substitute for the audio.</p>
 
 <h2 id="disclaimer">10. Disclaimers</h2>

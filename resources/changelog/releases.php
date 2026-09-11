@@ -21,7 +21,8 @@ return [
         'status' => 'coming soon',
         'summary' => 'The first release: a player for the audiobook files you own, with Audiobookshelf and self-hosted server support, chapters read from the files, and on-device transcripts.',
         'changes' => [
-            'Libraries: a folder on the device, an Audiobookshelf server, or a server speaking the Kithara sync protocol. Several at once, each with its own tab.',
+            'Libraries: a folder on the device, an Audiobookshelf server, a server speaking the Kithara sync protocol, or LibriVox. Several at once, each with its own tab.',
+            'LibriVox built in: search thousands of free public-domain audiobooks by title or author, add them, stream from the Internet Archive or download, one chapter per section. Free, no account.',
             'Formats: m4b, m4a, mp4, aac, mp3, ogg, oga, opus, flac, wav, wma, mka and 3gp. A folder of numbered files plays as one book on one timeline.',
             'Chapters read from m4b chpl atoms and QuickTime chapter tracks, ID3 CHAP frames, .cue sheets, or the server.',
             'Streaming over HTTP range requests, downloads that survive reboots, and a Wi-Fi-only switch.',
@@ -33,6 +34,7 @@ return [
             'Listening stats with a daily goal, streaks, a 30-day chart and an "On the shelf" card per library, plus 56 achievements in seven groups (Pro).',
             'Transcripts: on-device Whisper speech-to-text per chapter, with read-along highlighting, tap to jump, and whole-book search (Pro).',
             'Themes: light, dark, accent colours and colours from your wallpaper (Pro).',
+            'Languages: English, with French (Canada), Spanish, German, Portuguese (Brazil) and Italian in progress.',
         ],
     ],
 ];

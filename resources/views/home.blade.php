@@ -9,7 +9,7 @@
                 <span class="eyebrow">Kithara, the audiobook player for Android</span>
                 <span class="display">Your library.<br>Your pace.<br><span class="type" data-type-cycle='["In your pocket.","In your car.","Where you left off.","On your terms.","Always with you."]'>In your pocket.</span></span>
             </h1>
-            <p class="lead">Point Kithara at a folder on your phone, a server on your home network, or both. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
+            <p class="lead">Point Kithara at a folder on your phone, a server on your home network, or both, and browse thousands of free public-domain books from LibriVox. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
             <div class="hero-actions">
                 @include('partials.store-buttons')
                 <a href="#features" class="btn btn-ghost">See what it does</a>
@@ -121,6 +121,7 @@
                     <li>Android Auto, Bluetooth and notification controls</li>
                     <li>Bookmarks, search, filters, sort and pinning</li>
                     <li>One folder on the device</li>
+                    <li>LibriVox: thousands of free public-domain audiobooks, built in</li>
                     <li>Purple theme that follows the system</li>
                 </ul>
             </div>
@@ -169,7 +170,7 @@
         <div class="steps" data-reveal-group>
             <div class="step">
                 <h3>Add a library</h3>
-                <p>Pick a folder on the device, or sign in to your <a href="{{ route('audiobookshelf') }}">Audiobookshelf server</a>. Kithara reads titles, authors, narrators, covers and chapters from the files, and never loses your position on a rescan.</p>
+                <p>Pick a folder on the device, sign in to your <a href="{{ route('audiobookshelf') }}">Audiobookshelf server</a>, or add <a href="{{ route('librivox') }}">LibriVox</a> and search its free catalogue. Kithara reads titles, authors, narrators, covers and chapters from the files, and never loses your position on a rescan.</p>
             </div>
             <div class="step">
                 <h3>Press play</h3>

@@ -32,6 +32,7 @@
             'Plays m4b, m4a, mp4, aac, mp3, ogg, opus, flac, wav, wma, mka and 3gp files',
             'Reads chapters from m4b atoms, ID3 CHAP frames and .cue sheets',
             'Audiobookshelf client with streaming, downloads and position sync',
+            'LibriVox built in: free public-domain audiobooks to search, stream and download',
             'Sleep timer with fade-out and shake to extend',
             'Android Auto with voice search',
             'On-device Whisper transcripts (Pro)',

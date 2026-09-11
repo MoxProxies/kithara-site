@@ -12,6 +12,7 @@
     ['Price', 'Free; Pro is a one-time purchase', 'Free trial, then a one-time purchase for the full version'],
     ['Local files', 'Yes, any folder you pick', 'Yes, any folder you pick'],
     ['Server libraries', 'Audiobookshelf and the open Kithara sync protocol (Pro)', 'No; the library lives on the phone'],
+    ['Free public-domain catalogue', 'LibriVox built in: search, stream, download', 'No'],
     ['Streaming and downloads', 'Yes, from your server (Pro)', 'Not applicable'],
     ['Position sync across devices', 'Through your server (Pro)', 'No'],
     ['Chapters from the file', 'chpl atoms, QuickTime tracks, ID3 CHAP, .cue sheets', 'Yes, from embedded chapters'],

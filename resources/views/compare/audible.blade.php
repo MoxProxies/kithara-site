@@ -10,7 +10,7 @@
 @include('partials.compare-table', ['other' => 'Audible', 'rows' => [
     ['What it is', 'A player for your own files and servers', 'A store and subscription with its own player'],
     ['Price', 'Free; Pro is a one-time purchase', 'Monthly membership with credits, or buy titles outright'],
-    ['Catalogue', 'None; you bring the books', 'The largest commercial audiobook catalogue'],
+    ['Catalogue', 'LibriVox built in (free, public domain); otherwise you bring the books', 'The largest commercial audiobook catalogue'],
     ['Plays Audible purchases', 'No; Audible files are DRM-protected', 'Yes, only in the Audible app'],
     ['Plays your own files', 'Yes: m4b, mp3, flac, opus and more', 'No'],
     ['Server libraries', 'Audiobookshelf and the Kithara sync protocol (Pro)', 'No'],

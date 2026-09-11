@@ -17,7 +17,7 @@
             <tr><td>Sleep timer with fade-out and shake to extend</td><td>Streaming, downloads and position sync across devices</td></tr>
             <tr><td>Android Auto, Bluetooth and notification controls</td><td>More than one library, each with its own tab</td></tr>
             <tr><td>Bookmarks, search, filters, sort and pinning</td><td>Listening stats, the 30-day chart and your shelf</td></tr>
-            <tr><td>One folder on the device</td><td>56 achievements in seven groups</td></tr>
+            <tr><td>One folder on the device, plus LibriVox's free catalogue</td><td>56 achievements in seven groups</td></tr>
             <tr><td>Purple theme that follows the system</td><td>Theme mode, accent colours, colours from your wallpaper</td></tr>
             <tr><td></td><td>Transcripts: on-device speech-to-text for any chapter</td></tr>
         </tbody>

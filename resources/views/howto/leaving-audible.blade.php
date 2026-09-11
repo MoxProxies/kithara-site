@@ -51,7 +51,7 @@
     <li><strong><a href="https://www.downpour.com" rel="noopener">Downpour</a></strong>: DRM-free MP3 and M4B downloads, with a rental option on some titles.</li>
     <li><strong><a href="https://www.humblebundle.com" rel="noopener">Humble Bundle</a></strong>: occasional audiobook bundles, DRM-free, at very low prices per book.</li>
     <li><strong>Publishers and authors directly</strong>: some sell DRM-free from their own sites, especially in science fiction, fantasy and independent publishing. Worth a search for any author you buy repeatedly.</li>
-    <li><strong><a href="https://librivox.org" rel="noopener">LibriVox</a></strong>: free, volunteer-read recordings of public-domain books. Quality varies by reader; the best are excellent.</li>
+    <li><strong><a href="https://librivox.org" rel="noopener">LibriVox</a></strong>: free, volunteer-read recordings of public-domain books. Quality varies by reader; the best are excellent. <a href="{{ route('librivox') }}">Kithara has it built in</a>, so this one needs no downloading or organising at all.</li>
     <li><strong>CDs</strong>: second-hand audiobook CDs are cheap, and ripping a disc you own for your own use is legal in most places. A CD box set becomes a folder of files in an afternoon.</li>
 </ul>
 <p>Not on the list, deliberately: Google Play Books, Apple Books, Kobo, Audiobooks.com, Spotify and library apps such as Libby. They are fine services, but their audiobooks are locked to their apps in the same way Audible's are, so they do not solve the problem this page is about.</p>

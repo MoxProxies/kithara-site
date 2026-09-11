@@ -22,6 +22,14 @@
             'It reads them out of the files: the chpl chapter atom and QuickTime chapter track in m4b files, ID3 CHAP frames in mp3s, a .cue sheet beside a single large file, or the chapter list from your server. If a multi-file book has no chapter marks, each file becomes a chapter. Files with no chapters at all can be fixed in ten minutes with ffmpeg; see the how-to on this site.',
         ],
         [
+            'Does Kithara come with any free audiobooks?',
+            'Yes. Add LibriVox as a library and you can search thousands of free, volunteer-read public-domain audiobooks by title or author, add them to your library, stream them from the Internet Archive or download them for offline listening, with a chapter per section. It is part of the free app, not Pro, and needs no account.',
+        ],
+        [
+            'What languages is Kithara available in?',
+            'English, with French (Canada), Spanish, German, Portuguese (Brazil) and Italian in progress. Those translations are generated automatically and corrected as people report problems, so if a screen reads badly in your language, please tell us.',
+        ],
+        [
             'Is there an iPhone or iOS version?',
             'No. Kithara is Android only and runs on Android 8.0 or later.',
         ],
@@ -39,7 +47,7 @@
         ],
         [
             'Where do I get audiobooks for it?',
-            'Kithara is a player, not a store. It plays DRM-free files you already own: purchases from DRM-free audiobook shops, rips of CDs you own, public-domain recordings such as LibriVox, or anything in your Audiobookshelf library. The how-to on leaving Audible lists the DRM-free shops.',
+            'Kithara is a player, not a store. It plays DRM-free files you already own: purchases from DRM-free audiobook shops, rips of CDs you own, or anything in your Audiobookshelf library. It also has LibriVox built in: thousands of free public-domain audiobooks you can search, stream and download without an account. The how-to on leaving Audible lists the DRM-free shops.',
         ],
     ];
 

@@ -22,6 +22,7 @@ Route::view('/transcripts', 'guides.transcripts')->name('transcripts');
 Route::view('/formats', 'guides.formats')->name('formats');
 Route::view('/android-auto', 'guides.android-auto')->name('android-auto');
 Route::view('/sync-protocol', 'guides.sync-protocol')->name('sync-protocol');
+Route::view('/librivox', 'guides.librivox')->name('librivox');
 Route::view('/changelog', 'guides.changelog')->name('changelog');
 Route::redirect('/feed', '/changelog.xml', 301);
 Route::redirect('/rss', '/changelog.xml', 301);

@@ -30,7 +30,7 @@
 <h2 id="summary">1. The short version</h2>
 <ul>
     <li>The App has no account system, no analytics and no telemetry, and shows no advertising.</li>
-    <li>The App does not send us anything. Its network traffic is to servers you add yourself, plus a one-time download of a speech model if you turn on transcripts.</li>
+    <li>The App does not send us anything. Its network traffic is to servers you add yourself, to LibriVox and the Internet Archive if you add the LibriVox library, plus a one-time download of a speech model if you turn on transcripts.</li>
     <li>Your audiobooks, listening positions, statistics and transcripts stay on your device, and on your own server if you connect one.</li>
     <li>The only personal data we hold is what you send us through the contact form or by email.</li>
 </ul>
@@ -50,6 +50,8 @@
 <h2 id="servers">3. Servers you connect to</h2>
 <p>You can connect the App to an Audiobookshelf server, or to a server implementing the Kithara sync protocol. When you do, the App sends that server your credentials at sign-in, and afterwards your listening positions and library requests, so that your progress stays in step across devices.</p>
 <p>That server is operated by you or by whoever you got the login from, not by us. We have no access to it and no visibility of what it holds. How it handles your data is governed by its operator and, for Audiobookshelf, by that project's own documentation.</p>
+<h3 id="librivox">LibriVox</h3>
+<p>If you add the LibriVox library, browsing sends your searches to <code>librivox.org</code>, and playing or downloading a book fetches its cover and audio from <code>archive.org</code> (the Internet Archive). Like any web request, those show each site your IP address and what you requested, under <a href="https://librivox.org/pages/privacy-policy/" rel="noopener">LibriVox's</a> and <a href="https://archive.org/about/terms" rel="noopener">the Internet Archive's</a> own policies. There is no account, nothing about your listening is sent back, and catalogue responses are cached on the device for a day so repeated searches make no request at all.</p>
 
 <h2 id="transcripts">4. Transcripts</h2>
 <p>Kithara Pro can turn a chapter into timed text so you can read along or search a book. <strong>Transcription runs entirely on your device.</strong> No audio, text or metadata is uploaded anywhere, and transcripts are stored only on the device alongside your other listening data.</p>
