@@ -37,7 +37,7 @@
     </table>
 </div>
 <p>You can change the model and the number of processor threads in <strong>Settings</strong>. More threads finish sooner and warm the phone more; plugging in for a whole-book run is a good idea. Downloaded models can be deleted from <strong>Settings, Storage</strong> at any time.</p>
-<p>The models are English only for now. Transcription of other languages is not supported yet.</p>
+<p>The models are English only for now, whichever language the app itself is set to. Transcription of other languages is not supported yet.</p>
 
 <h2 id="privacy">Privacy</h2>
 <p>Everything runs on the device. The only network requests involved are the one-time model downloads: the Whisper model from a public mirror maintained by the sherpa-onnx project on Hugging Face, and a small voice-activity model from the same project's releases on GitHub. Like any download, each shows that host your IP address and the file requested, and nothing else. Your audio, your transcripts and your searches never leave the phone. Details are in the <a href="{{ route('privacy') }}#app">privacy policy</a>.</p>

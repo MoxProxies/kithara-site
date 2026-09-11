@@ -27,7 +27,7 @@
         ],
         [
             'What languages is Kithara available in?',
-            'English, with French (Canada), Spanish, German, Portuguese (Brazil) and Italian in progress. Those translations are generated automatically and corrected as people report problems, so if a screen reads badly in your language, please tell us.',
+            'English, French, Spanish, German, Portuguese (Brazil) and Italian. Pick one in Settings, Language, or let it follow the phone. Every language except English was machine-translated and checked by us rather than by native speakers, so if a screen reads badly, please tell us and we will fix it. Transcripts are English-only for now, because the on-device speech models only understand English.',
         ],
         [
             'Is there an iPhone or iOS version?',

@@ -34,7 +34,7 @@ return [
             'Listening stats with a daily goal, streaks, a 30-day chart and an "On the shelf" card per library, plus 56 achievements in seven groups (Pro).',
             'Transcripts: on-device Whisper speech-to-text per chapter, with read-along highlighting, tap to jump, and whole-book search (Pro).',
             'Themes: light, dark, accent colours and colours from your wallpaper (Pro).',
-            'Languages: English, with French (Canada), Spanish, German, Portuguese (Brazil) and Italian in progress.',
+            'Languages: English, French, Spanish, German, Portuguese (Brazil) and Italian, with a per-app language setting. Non-English text is machine-translated and reviewed.',
         ],
     ],
 ];

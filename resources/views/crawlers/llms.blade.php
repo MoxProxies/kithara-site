@@ -11,7 +11,7 @@
 - Formats: m4b, m4a, mp4, aac, mp3, ogg, oga, opus, flac, wav, wma, mka, 3gp. Not Audible .aax (DRM).
 - Chapters: read from m4b chpl atoms and QuickTime chapter tracks, ID3 CHAP frames, .cue sheets, or the server; multi-file books with no marks get one chapter per file.
 - Privacy: no account, no analytics, no telemetry. Only network traffic is to servers the user adds, to librivox.org and archive.org if the LibriVox library is added, plus a one-time speech-model download if transcripts are enabled.
-- Languages: English; French (Canada), Spanish, German, Portuguese (Brazil) and Italian in progress (machine translated).
+- Languages: English, French, Spanish, German, Portuguese (Brazil), Italian (non-English machine-translated and reviewed; per-app language setting). Transcripts English-only.
 - Availability: {{ config('kithara.play_live') ? 'Google Play, '.config('kithara.play_store_url') : 'coming to Google Play; a notify-me list is on the home page' }}.
 
 ## Pages
