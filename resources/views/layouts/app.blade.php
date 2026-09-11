@@ -23,6 +23,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+    <div class="progress-bar" data-progress aria-hidden="true"></div>
     @include('partials.header')
 
     <main id="main">

@@ -6,7 +6,7 @@
     <div class="container hero-grid">
         <div>
             <span class="eyebrow">Audiobook player for Android</span>
-            <h1>Your library.<br>Your pace.<br>Always in your pocket.</h1>
+            <h1>Your library.<br>Your pace.<br>Always <span class="type" data-type-cycle='["in your pocket.","in the car.","where you left off.","in step.","yours."]'>in your pocket.</span></h1>
             <p class="lead">Point Appollo at a folder on your phone, a server on your home network, or both. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
             <div class="hero-actions">
                 @include('partials.store-buttons')
@@ -24,13 +24,13 @@
 {{-- Features --}}
 <section class="section section-alt" id="features">
     <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
             <span class="eyebrow">Features</span>
             <h2>Built for long books and real libraries</h2>
             <p>One player session shared by the screen, the notification, your car and your headphones, so nothing can disagree about where you are in a book.</p>
         </div>
 
-        <div class="features">
+        <div class="features" data-reveal-group>
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
                 <h3>Real chapters, read from the file</h3>
@@ -68,11 +68,11 @@
 {{-- Screens --}}
 <section class="section">
     <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
             <span class="eyebrow">Screens</span>
             <h2>Quiet, dark, and out of your way</h2>
         </div>
-        <div class="screens">
+        <div class="screens" data-reveal-group>
             <figure class="screen">
                 <img src="{{ asset('img/screens/library.webp') }}" srcset="{{ asset('img/screens/library.webp') }} 1x, {{ asset('img/screens/library@2x.webp') }} 2x" width="540" height="1142" alt="Library list with progress, time left and pinned books" loading="lazy">
                 <figcaption>Library, with progress and time left at a glance</figcaption>
@@ -96,13 +96,13 @@
 {{-- Pro --}}
 <section class="section" id="pro">
     <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
             <span class="eyebrow">Appollo Pro</span>
             <h2>Everything you need to listen is free. Pro makes it a system.</h2>
             <p>Pro is a one-time unlock through Google Play. No subscription, no renewal. Stats and achievements are recorded from day one, so unlocking later shows your full history.</p>
         </div>
 
-        <div class="plans">
+        <div class="plans" data-reveal-group>
             <div class="plan">
                 <h3>Free, forever</h3>
                 <ul class="plan-list">
@@ -133,17 +133,17 @@
 {{-- Transcripts --}}
 <section class="section section-alt">
     <div class="container split">
-        <div>
+        <div data-reveal>
             <span class="eyebrow">Transcripts · Pro</span>
             <h2>Read along, or find that one line</h2>
             <p class="muted">Appollo turns any chapter into timed text, entirely on your phone. Nothing is uploaded and nothing leaves the device. Tap a passage to jump there, or search the whole book for a phrase you half remember.</p>
             <p class="muted">Pick the speech model that suits your phone: tiny is fastest, small is closest to a dictation app. Models download once on first use and long chapters transcribe in the background with progress in the notification.</p>
         </div>
-        <div class="transcript-demo" aria-hidden="true">
+        <div class="transcript-demo" aria-hidden="true" data-reveal data-transcribe>
             <div class="transcript-search">Search the whole book</div>
-            <p class="transcript-line"><span>41:12</span>The harbour was empty by the time she reached it, the last boat a smudge against the grey.</p>
-            <p class="transcript-line active"><span>41:20</span>She did not call out. There was no one left who would have answered.</p>
-            <p class="transcript-line"><span>41:27</span>Instead she sat on the wall, took out the letter, and read it again from the beginning.</p>
+            <p class="transcript-line" data-line><span>41:12</span><span class="transcript-text" data-line-text>The harbour was empty by the time she reached it, the last boat a smudge against the grey.</span></p>
+            <p class="transcript-line" data-line><span>41:20</span><span class="transcript-text" data-line-text>She did not call out. There was no one left who would have answered.</span></p>
+            <p class="transcript-line" data-line><span>41:27</span><span class="transcript-text" data-line-text>Instead she sat on the wall, took out the letter, and read it again from the beginning.</span></p>
         </div>
     </div>
 </section>
@@ -151,12 +151,12 @@
 {{-- How it works --}}
 <section class="section">
     <div class="container">
-        <div class="section-head">
+        <div class="section-head" data-reveal>
             <span class="eyebrow">How it works</span>
             <h2>Up and listening in under a minute</h2>
         </div>
 
-        <div class="steps">
+        <div class="steps" data-reveal-group>
             <div class="step">
                 <h3>Add a library</h3>
                 <p>Pick a folder on the device, or sign in to your Audiobookshelf server. Appollo reads titles, authors, narrators, covers and chapters from the files, and never loses your position on a rescan.</p>
@@ -171,11 +171,11 @@
             </div>
         </div>
 
-        <div class="section-head" style="margin-top: 3.5rem; margin-bottom: 0;">
+        <div class="section-head" style="margin-top: 3.5rem; margin-bottom: 0;" data-reveal>
             <h3>Plays the files you already have</h3>
             <p style="font-size: 1rem;">DRM-free audiobooks from any store, library rip, or your own recordings. Audible .aax files need their DRM removed first.</p>
         </div>
-        <div class="formats">
+        <div class="formats" data-reveal-group>
             <span class="chip">M4B</span>
             <span class="chip">M4A</span>
             <span class="chip">MP4</span>
@@ -196,7 +196,7 @@
 {{-- Privacy --}}
 <section class="section section-alt">
     <div class="container">
-        <div class="section-head" style="margin-bottom: 0;">
+        <div class="section-head" style="margin-bottom: 0;" data-reveal>
             <span class="eyebrow">Privacy</span>
             <h2>Your listening is nobody's business</h2>
             <p>No analytics, no accounts, no telemetry, no ads. Appollo talks to the servers you add and nothing else, apart from a one-time speech model download if you use transcripts. Read the <a href="{{ route('privacy') }}">privacy policy</a>; it is short.</p>
@@ -207,7 +207,7 @@
 {{-- Download CTA --}}
 <section class="section" id="download">
     <div class="container">
-        <div class="cta-band">
+        <div class="cta-band" data-reveal>
             <h2>Ready for your next chapter?</h2>
             <p>Download Appollo for Android and bring your whole library with you.</p>
             <div class="hero-actions">
