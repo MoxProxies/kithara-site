@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Appollo site settings
+| Kithara site settings
 |--------------------------------------------------------------------------
 |
 | Business details used across the marketing site and legal pages. Set the
@@ -12,20 +12,20 @@
 
 return [
 
-    'company_name' => env('APPOLLO_COMPANY_NAME', 'Charitou Multimedia Solutions Inc.'),
+    'company_name' => env('KITHARA_COMPANY_NAME', 'Charitou Multimedia Solutions Inc.'),
 
-    'company_address' => env('APPOLLO_COMPANY_ADDRESS', ''),
+    'company_address' => env('KITHARA_COMPANY_ADDRESS', ''),
 
     // Canadian province whose law governs the Terms. Canada itself is assumed.
-    'province' => env('APPOLLO_PROVINCE', 'Ontario'),
+    'province' => env('KITHARA_PROVINCE', 'Ontario'),
 
     // Shown publicly on the contact page and in the legal documents.
-    'support_email' => env('APPOLLO_SUPPORT_EMAIL', 'support@example.com'),
+    'support_email' => env('KITHARA_SUPPORT_EMAIL', 'support@example.com'),
 
     // Where contact form submissions are delivered.
-    'contact_to' => env('APPOLLO_CONTACT_TO', env('APPOLLO_SUPPORT_EMAIL', 'support@example.com')),
+    'contact_to' => env('KITHARA_CONTACT_TO', env('KITHARA_SUPPORT_EMAIL', 'support@example.com')),
 
-    'play_store_url' => env('APPOLLO_PLAY_STORE_URL', '#'),
+    'play_store_url' => env('KITHARA_PLAY_STORE_URL', '#'),
 
     // Date shown as "Last updated" on the Terms and Privacy pages.
     'legal_updated' => '10 September 2026',

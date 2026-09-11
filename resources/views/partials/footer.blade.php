@@ -1,8 +1,8 @@
 <footer class="site-footer">
     <div class="container footer-grid">
-        <a href="{{ route('home') }}" class="brand" aria-label="Appollo home">
+        <a href="{{ route('home') }}" class="brand" aria-label="Kithara home">
             @include('partials.logo')
-            Appollo
+            Kithara
         </a>
 
         <ul class="footer-links">
@@ -13,6 +13,6 @@
             <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
         </ul>
 
-        <p class="copyright">&copy; {{ date('Y') }} {{ rtrim(config('appollo.company_name'), '.') }}. All rights reserved.</p>
+        <p class="copyright">&copy; {{ date('Y') }} {{ rtrim(config('kithara.company_name'), '.') }}. All rights reserved.</p>
     </div>
 </footer>

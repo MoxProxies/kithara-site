@@ -1,6 +1,6 @@
-# Appollo marketing site
+# Kithara marketing site
 
-Laravel 13 site for Appollo, the Android audiobook player: landing page, contact form, Terms & Conditions and Privacy Policy.
+Laravel 13 site for Kithara, the Android audiobook player: landing page, contact form, Terms & Conditions and Privacy Policy.
 
 ## Pages
 
@@ -30,18 +30,18 @@ Run the tests with `php artisan test`.
 
 ## Site settings (`.env`)
 
-All company-specific details are read from `.env` via `config/appollo.php`, so nothing needs editing in the views:
+All company-specific details are read from `.env` via `config/kithara.php`, so nothing needs editing in the views:
 
 ```dotenv
-APPOLLO_COMPANY_NAME="Charitou Multimedia Solutions Inc."  # legal entity shown in T&Cs, privacy, footer
-APPOLLO_COMPANY_ADDRESS="123 Example Street, ..."  # optional, shown at the end of legal pages
-APPOLLO_PROVINCE=Ontario                            # province whose law governs the T&Cs
-APPOLLO_SUPPORT_EMAIL=support@appollo.app           # public support address
-APPOLLO_CONTACT_TO=hello@appollo.app                # where contact form submissions are sent
-APPOLLO_PLAY_STORE_URL=#                            # Google Play link
+KITHARA_COMPANY_NAME="Charitou Multimedia Solutions Inc."  # legal entity shown in T&Cs, privacy, footer
+KITHARA_COMPANY_ADDRESS="123 Example Street, ..."  # optional, shown at the end of legal pages
+KITHARA_PROVINCE=Ontario                            # province whose law governs the T&Cs
+KITHARA_SUPPORT_EMAIL=support@example.com           # public support address
+KITHARA_CONTACT_TO=hello@example.com                # where contact form submissions are sent
+KITHARA_PLAY_STORE_URL=#                            # Google Play link
 ```
 
-The "Last updated" date on the legal pages is set in `config/appollo.php`.
+The "Last updated" date on the legal pages is set in `config/kithara.php`.
 
 ## Deploying on Laravel Forge
 
@@ -72,7 +72,7 @@ The site needs no database. Sessions and cache use the `file` driver, the contac
    QUEUE_CONNECTION=sync
    ```
 
-   plus the `APPOLLO_*` values above.
+   plus the `KITHARA_*` values above.
 
 4. **Mail**: configure a real mailer so contact submissions are delivered, e.g. for Postmark / Resend / SES / SMTP:
 
@@ -83,7 +83,7 @@ The site needs no database. Sessions and cache use the `file` driver, the contac
    MAIL_USERNAME=...
    MAIL_PASSWORD=...
    MAIL_FROM_ADDRESS=noreply@your-site.com
-   MAIL_FROM_NAME="Appollo"
+   MAIL_FROM_NAME="Kithara"
    ```
 
    `MAIL_FROM_ADDRESS` should be on a domain you've verified with your mail provider; replies go to the sender via `Reply-To`.

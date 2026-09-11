@@ -1,8 +1,8 @@
 <header class="site-header">
     <div class="container nav">
-        <a href="{{ route('home') }}" class="brand" aria-label="Appollo home">
+        <a href="{{ route('home') }}" class="brand" aria-label="Kithara home">
             @include('partials.logo')
-            Appollo
+            Kithara
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu" data-nav-toggle>

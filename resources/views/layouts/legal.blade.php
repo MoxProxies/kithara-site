@@ -27,7 +27,7 @@
         </nav>
 
         <article class="legal">
-            <p class="updated">Last updated: {{ config('appollo.legal_updated') }}</p>
+            <p class="updated">Last updated: {{ config('kithara.legal_updated') }}</p>
             @yield('document')
         </article>
     </div>

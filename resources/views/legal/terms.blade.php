@@ -1,9 +1,9 @@
 @extends('layouts.legal', [
     'title' => 'Terms & Conditions',
-    'intro' => 'The rules for using the Appollo app and this website. Please read them; they set out what you can expect from us and what we expect from you.',
+    'intro' => 'The rules for using the Kithara app and this website. Please read them; they set out what you can expect from us and what we expect from you.',
     'sections' => [
         'acceptance' => '1. Acceptance of these terms',
-        'eligibility' => '2. Who can use Appollo',
+        'eligibility' => '2. Who can use Kithara',
         'licence' => '3. Your licence to use the app',
         'your-content' => '4. Your audiobooks and content',
         'servers' => '5. Servers you connect to',
@@ -21,17 +21,17 @@
 ])
 
 @php
-    $company = config('appollo.company_name');
-    $email = config('appollo.support_email');
+    $company = config('kithara.company_name');
+    $email = config('kithara.support_email');
 @endphp
 
 @section('document')
-<p>These Terms &amp; Conditions ("<strong>Terms</strong>") govern your use of the Appollo Android application (the "<strong>App</strong>") and the website at {{ request()->getHost() }} (the "<strong>Site</strong>"), together the "<strong>Service</strong>". The Service is provided by <strong>{{ $company }}</strong> ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>").</p>
+<p>These Terms &amp; Conditions ("<strong>Terms</strong>") govern your use of the Kithara Android application (the "<strong>App</strong>") and the website at {{ request()->getHost() }} (the "<strong>Site</strong>"), together the "<strong>Service</strong>". The Service is provided by <strong>{{ $company }}</strong> ("<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>").</p>
 
 <h2 id="acceptance">1. Acceptance of these terms</h2>
 <p>By downloading, installing or using the App, or by browsing the Site, you agree to be bound by these Terms and our <a href="{{ route('privacy') }}">Privacy Policy</a>. If you do not agree, do not use the Service.</p>
 
-<h2 id="eligibility">2. Who can use Appollo</h2>
+<h2 id="eligibility">2. Who can use Kithara</h2>
 <p>You must be at least 13 years old (or the minimum age required in your country to use an app without parental consent) to use the Service. If you are under 18, you confirm that a parent or guardian has reviewed and agreed to these Terms on your behalf.</p>
 
 <h2 id="licence">3. Your licence to use the app</h2>
@@ -45,11 +45,11 @@
 <p>The App is distributed through Google Play. Google's own terms also apply to your download and use of the App.</p>
 
 <h2 id="your-content">4. Your audiobooks and content</h2>
-<p>Appollo is a <strong>player</strong>. We do not sell, host or distribute audiobooks. You are solely responsible for the audio files you point the App at, whether they are in a folder on your device or on a server you connect to, and you represent that you have the legal right to possess and play them. You must not use the App to play content that infringes anyone's copyright or other rights.</p>
+<p>Kithara is a <strong>player</strong>. We do not sell, host or distribute audiobooks. You are solely responsible for the audio files you point the App at, whether they are in a folder on your device or on a server you connect to, and you represent that you have the legal right to possess and play them. You must not use the App to play content that infringes anyone's copyright or other rights.</p>
 <p>We do not claim any ownership of your files, your listening positions, your bookmarks or your listening statistics. That data lives on your device and, where you choose, on servers you control.</p>
 
 <h2 id="servers">5. Servers you connect to</h2>
-<p>The App can connect to an Audiobookshelf server, or to a server implementing the Appollo sync protocol, that you or a third party operate. When you do:</p>
+<p>The App can connect to an Audiobookshelf server, or to a server implementing the Kithara sync protocol, that you or a third party operate. When you do:</p>
 <ul>
     <li>you are responsible for that server, its availability, its security and its contents;</li>
     <li>you must have permission from whoever runs the server to use it;</li>
@@ -69,7 +69,7 @@
 </ul>
 
 <h2 id="purchases">7. Purchases</h2>
-<p>The App is free to download and everything needed to listen is free, with no advertising and no time limit. <strong>Appollo Pro</strong> is a one-time in-app purchase that unlocks additional features such as server libraries, downloads, cross-device sync, multiple libraries, transcripts, statistics, achievements and themes. Pro is processed by Google Play Billing; we never see or store your payment details.</p>
+<p>The App is free to download and everything needed to listen is free, with no advertising and no time limit. <strong>Kithara Pro</strong> is a one-time in-app purchase that unlocks additional features such as server libraries, downloads, cross-device sync, multiple libraries, transcripts, statistics, achievements and themes. Pro is processed by Google Play Billing; we never see or store your payment details.</p>
 <ul>
     <li><strong>Pricing.</strong> The price is shown in Google Play before you buy and may vary by region. Taxes may be added.</li>
     <li><strong>One-time.</strong> Pro is not a subscription. It does not renew and there is nothing to cancel. Google Play is the record of ownership; the App caches the result so Pro keeps working offline.</li>
@@ -79,7 +79,7 @@
 <p>Listening statistics and achievements are recorded whether or not Pro is owned, but they are stored per device and do not sync between devices.</p>
 
 <h2 id="ip">8. Intellectual property</h2>
-<p>The App, the Site, and all associated software, designs, logos, text and graphics are owned by {{ $company }} or our licensors and are protected by copyright, trademark and other laws. "Appollo" and the Appollo logo are trademarks of {{ $company }}. Nothing in these Terms gives you any right to use our branding without our prior written consent.</p>
+<p>The App, the Site, and all associated software, designs, logos, text and graphics are owned by {{ $company }} or our licensors and are protected by copyright, trademark and other laws. "Kithara" and the Kithara logo are trademarks of {{ rtrim($company, ".") }}. Nothing in these Terms gives you any right to use our branding without our prior written consent.</p>
 <p>If you send us feedback or suggestions, you grant us a perpetual, royalty-free licence to use them without obligation to you.</p>
 
 <h2 id="third-party">9. Third-party services and components</h2>
@@ -101,11 +101,11 @@
 <p>We may update these Terms from time to time. If we make material changes we will post the new version on the Site at least 14 days before they take effect. Continued use of the Service after that date means you accept the updated Terms.</p>
 
 <h2 id="law">14. Governing law</h2>
-<p>These Terms are governed by the laws of the Province of {{ config('appollo.province') }} and the federal laws of Canada applicable in it, without regard to conflict-of-law rules. You agree that the courts of {{ config('appollo.province') }} have exclusive jurisdiction over any dispute arising from the Service, without prejudice to any mandatory consumer-protection rights you have where you live. If you are a consumer in a jurisdiction whose law does not allow a clause in these Terms, that clause applies to you only to the extent permitted.</p>
+<p>These Terms are governed by the laws of the Province of {{ config('kithara.province') }} and the federal laws of Canada applicable in it, without regard to conflict-of-law rules. You agree that the courts of {{ config('kithara.province') }} have exclusive jurisdiction over any dispute arising from the Service, without prejudice to any mandatory consumer-protection rights you have where you live. If you are a consumer in a jurisdiction whose law does not allow a clause in these Terms, that clause applies to you only to the extent permitted.</p>
 
 <h2 id="contact">15. Contact us</h2>
 <p>Questions about these Terms? Email us at <a href="mailto:{{ $email }}">{{ $email }}</a> or use the <a href="{{ route('contact') }}">contact form</a>.</p>
-@if (config('appollo.company_address'))
-<p>{{ $company }}<br>{{ config('appollo.company_address') }}</p>
+@if (config('kithara.company_address'))
+<p>{{ $company }}<br>{{ config('kithara.company_address') }}</p>
 @endif
 @endsection

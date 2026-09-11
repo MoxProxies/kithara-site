@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@hasSection('title')@yield('title') · Appollo @else Appollo, an audiobook player for Android @endif</title>
-    <meta name="description" content="@yield('meta_description', 'Appollo is an audiobook player for Android. Point it at a folder, an Audiobookshelf server, or both. It finds your books, reads the chapters out of the files, and keeps your position in step across devices.')">
+    <title>@hasSection('title')@yield('title') · Kithara @else Kithara, an audiobook player for Android @endif</title>
+    <meta name="description" content="@yield('meta_description', 'Kithara is an audiobook player for Android. Point it at a folder, an Audiobookshelf server, or both. It finds your books, reads the chapters out of the files, and keeps your position in step across devices.')">
     <meta name="theme-color" content="#0d0b13">
 
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Appollo">
-    <meta property="og:title" content="@yield('title', 'Appollo, an audiobook player for Android')">
+    <meta property="og:site_name" content="Kithara">
+    <meta property="og:title" content="@yield('title', 'Kithara, an audiobook player for Android')">
     <meta property="og:description" content="@yield('meta_description', 'An audiobook player for Android that works with local folders and Audiobookshelf.')">
     <meta property="og:url" content="{{ url()->current() }}">
 

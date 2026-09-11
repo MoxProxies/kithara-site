@@ -30,7 +30,7 @@ class ContactFormTest extends TestCase
             ->assertSessionHas('status');
 
         Mail::assertSent(ContactMessage::class, function (ContactMessage $mail) {
-            return $mail->hasTo(config('appollo.contact_to'))
+            return $mail->hasTo(config('kithara.contact_to'))
                 && $mail->hasReplyTo('ada@example.com')
                 && $mail->name === 'Ada Lovelace'
                 && $mail->topic === 'Feature request or feedback';

@@ -1,6 +1,6 @@
 @extends('layouts.legal', [
     'title' => 'Privacy Policy',
-    'intro' => 'Appollo has no accounts, no analytics and no telemetry. It talks to the servers you add, and nothing else apart from a one-time speech model download if you use transcripts. This page explains what that means in practice, and what this website collects.',
+    'intro' => 'Kithara has no accounts, no analytics and no telemetry. It talks to the servers you add, and nothing else apart from a one-time speech model download if you use transcripts. This page explains what that means in practice, and what this website collects.',
     'sections' => [
         'summary' => '1. The short version',
         'app' => '2. Data in the app',
@@ -20,12 +20,12 @@
 ])
 
 @php
-    $company = config('appollo.company_name');
-    $email = config('appollo.support_email');
+    $company = config('kithara.company_name');
+    $email = config('kithara.support_email');
 @endphp
 
 @section('document')
-<p>This Privacy Policy explains how <strong>{{ $company }}</strong>, a company incorporated in {{ config('appollo.province') }}, Canada ("<strong>we</strong>", "<strong>us</strong>"), handles information in relation to the Appollo Android application (the "<strong>App</strong>") and this website (the "<strong>Site</strong>"). We follow Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) and, where they apply to you, the GDPR, the UK GDPR and comparable laws. Where we act as a data controller, it is only for the small amount of data described in section 7.</p>
+<p>This Privacy Policy explains how <strong>{{ $company }}</strong>, a company incorporated in {{ config('kithara.province') }}, Canada ("<strong>we</strong>", "<strong>us</strong>"), handles information in relation to the Kithara Android application (the "<strong>App</strong>") and this website (the "<strong>Site</strong>"). We follow Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) and, where they apply to you, the GDPR, the UK GDPR and comparable laws. Where we act as a data controller, it is only for the small amount of data described in section 7.</p>
 
 <h2 id="summary">1. The short version</h2>
 <ul>
@@ -41,22 +41,22 @@
     <li><strong>Your library</strong>: file paths, titles, authors, covers, durations and chapter lists read from the audio files you point it at.</li>
     <li><strong>Listening data</strong>: your position in each book, bookmarks, listening statistics measured from time spent actually playing, and achievements.</li>
     <li><strong>Transcripts</strong>: text generated from chapters you choose to transcribe (see section 4), plus the downloaded speech model.</li>
-    <li><strong>Pro status</strong>: whether Appollo Pro is owned, cached from Google Play so Pro keeps working offline.</li>
+    <li><strong>Pro status</strong>: whether Kithara Pro is owned, cached from Google Play so Pro keeps working offline.</li>
     <li><strong>Server credentials</strong>: if you connect a server, your password is exchanged for an access token at sign-in and then discarded. Only the token and the server address are stored.</li>
     <li><strong>Downloads</strong>: books you choose to pin for offline use are stored in the App's private storage.</li>
 </ul>
 <p>Uninstalling the App removes all of this from your device.</p>
 
 <h2 id="servers">3. Servers you connect to</h2>
-<p>You can connect the App to an Audiobookshelf server, or to a server implementing the Appollo sync protocol. When you do, the App sends that server your credentials at sign-in, and afterwards your listening positions and library requests, so that your progress stays in step across devices.</p>
+<p>You can connect the App to an Audiobookshelf server, or to a server implementing the Kithara sync protocol. When you do, the App sends that server your credentials at sign-in, and afterwards your listening positions and library requests, so that your progress stays in step across devices.</p>
 <p>That server is operated by you or by whoever you got the login from, not by us. We have no access to it and no visibility of what it holds. How it handles your data is governed by its operator and, for Audiobookshelf, by that project's own documentation.</p>
 
 <h2 id="transcripts">4. Transcripts</h2>
-<p>Appollo Pro can turn a chapter into timed text so you can read along or search a book. <strong>Transcription runs entirely on your device.</strong> No audio, text or metadata is uploaded anywhere, and transcripts are stored only on the device alongside your other listening data.</p>
+<p>Kithara Pro can turn a chapter into timed text so you can read along or search a book. <strong>Transcription runs entirely on your device.</strong> No audio, text or metadata is uploaded anywhere, and transcripts are stored only on the device alongside your other listening data.</p>
 <p>Speech models are not bundled with the App because of their size (roughly 100 MB to 360 MB). The first time you use transcripts, the App downloads the model you choose from a public mirror maintained by the sherpa-onnx project on Hugging Face. That download is an ordinary HTTPS request and, like any web request, exposes your IP address and the file requested to Hugging Face under <a href="https://huggingface.co/privacy" rel="noopener">their privacy policy</a>. Nothing about you, your books or your listening is included. Once downloaded, the model stays on the device and no further requests are made.</p>
 
 <h2 id="play">5. Google Play</h2>
-<p>The App is distributed through Google Play, and Appollo Pro is sold as a one-time in-app purchase processed by Google Play Billing. Google collects information about your download, purchases and device under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. We receive purchase confirmations, and Google may share aggregated, anonymised crash and installation statistics with us through the Play Console. We never receive your payment details.</p>
+<p>The App is distributed through Google Play, and Kithara Pro is sold as a one-time in-app purchase processed by Google Play Billing. Google collects information about your download, purchases and device under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. We receive purchase confirmations, and Google may share aggregated, anonymised crash and installation statistics with us through the Play Console. We never receive your payment details.</p>
 
 <h2 id="permissions">6. Android permissions</h2>
 <p>The App requests only what it needs to play audio:</p>
@@ -102,7 +102,7 @@
 
 <h2 id="contact">14. Contact us</h2>
 <p>Privacy questions or requests: <a href="mailto:{{ $email }}">{{ $email }}</a>, or use the <a href="{{ route('contact') }}">contact form</a>.</p>
-@if (config('appollo.company_address'))
-<p>{{ $company }}<br>{{ config('appollo.company_address') }}</p>
+@if (config('kithara.company_address'))
+<p>{{ $company }}<br>{{ config('kithara.company_address') }}</p>
 @endif
 @endsection

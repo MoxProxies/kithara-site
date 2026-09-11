@@ -19,7 +19,7 @@ class ContactController extends Controller
 
     public function send(ContactRequest $request): RedirectResponse
     {
-        Mail::to(config('appollo.contact_to'))->send(new ContactMessage(
+        Mail::to(config('kithara.contact_to'))->send(new ContactMessage(
             name: $request->validated('name'),
             email: $request->validated('email'),
             topic: $request->topicLabel(),

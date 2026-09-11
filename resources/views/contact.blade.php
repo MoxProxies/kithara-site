@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact')
-@section('meta_description', 'Get in touch with the Appollo team for support, billing questions, feedback or press enquiries.')
+@section('meta_description', 'Get in touch with the Kithara team for support, billing questions, feedback or press enquiries.')
 
 @section('content')
 <section class="page-head">
@@ -66,7 +66,7 @@
         <aside>
             <div class="info-card">
                 <h3>Support</h3>
-                <p>Having trouble with the app? Email <a href="mailto:{{ config('appollo.support_email') }}">{{ config('appollo.support_email') }}</a> and include your device model and app version if you can.</p>
+                <p>Having trouble with the app? Email <a href="mailto:{{ config('kithara.support_email') }}">{{ config('kithara.support_email') }}</a> and include your device model and app version if you can.</p>
             </div>
             <div class="info-card">
                 <h3>Response time</h3>

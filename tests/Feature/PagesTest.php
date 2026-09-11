@@ -10,7 +10,7 @@ class PagesTest extends TestCase
     {
         $this->get('/')
             ->assertOk()
-            ->assertSee('Appollo')
+            ->assertSee('Kithara')
             ->assertSee('Features');
     }
 
@@ -19,7 +19,7 @@ class PagesTest extends TestCase
         $this->get('/terms')
             ->assertOk()
             ->assertSee('Terms &amp; Conditions', false)
-            ->assertSee(config('appollo.company_name'));
+            ->assertSee(config('kithara.company_name'));
     }
 
     public function test_privacy_page_renders(): void
@@ -27,6 +27,6 @@ class PagesTest extends TestCase
         $this->get('/privacy')
             ->assertOk()
             ->assertSee('Privacy Policy')
-            ->assertSee(config('appollo.support_email'));
+            ->assertSee(config('kithara.support_email'));
     }
 }
