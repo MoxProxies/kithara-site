@@ -22,6 +22,13 @@ Route::view('/transcripts', 'guides.transcripts')->name('transcripts');
 Route::view('/formats', 'guides.formats')->name('formats');
 Route::view('/android-auto', 'guides.android-auto')->name('android-auto');
 Route::view('/sync-protocol', 'guides.sync-protocol')->name('sync-protocol');
+Route::view('/changelog', 'guides.changelog')->name('changelog');
+Route::get('/changelog.xml', fn () => response()->view('crawlers.changelog-feed')->header('Content-Type', 'application/rss+xml; charset=utf-8'))->name('changelog.feed');
+
+Route::view('/compare', 'compare.index')->name('compare');
+Route::view('/compare/smart-audiobook-player', 'compare.smart-audiobook-player')->name('compare.smart-audiobook-player');
+Route::view('/compare/audiobookshelf-app', 'compare.audiobookshelf-app')->name('compare.audiobookshelf-app');
+Route::view('/compare/audible', 'compare.audible')->name('compare.audible');
 
 Route::view('/terms', 'legal.terms')->name('terms');
 Route::view('/privacy', 'legal.privacy')->name('privacy');

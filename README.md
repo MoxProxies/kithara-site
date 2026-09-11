@@ -11,6 +11,8 @@ Laravel 13 site for Kithara, the Android audiobook player: landing page, contact
 | `/terms`   | `resources/views/legal/terms.blade.php`   | Uses the shared `layouts/legal` chrome |
 | `/privacy` | `resources/views/legal/privacy.blade.php` | Uses the shared `layouts/legal` chrome |
 | `/pro`, `/audiobookshelf`, `/transcripts`, `/formats`, `/android-auto`, `/sync-protocol` | `resources/views/guides/` | One page per search intent, on the shared `layouts/guide` chrome with breadcrumb schema |
+| `/changelog`, `/changelog.xml` | `guides/changelog.blade.php`, `crawlers/changelog-feed.blade.php` | Both read `resources/changelog/releases.php` |
+| `/compare/...` | `resources/views/compare/` | Comparison pages against Smart AudioBook Player, the Audiobookshelf app and Audible |
 | `/sitemap.xml`, `/robots.txt`, `/llms.txt` | `resources/views/crawlers/` | Generated, so they carry the deployed host |
 
 Styles live in `resources/css/app.css` (plain CSS, no Tailwind) and are bundled by Vite.
@@ -103,6 +105,10 @@ The site needs no database. Sessions and cache use the `file` driver, the contac
 5. **SSL**: issue a Let's Encrypt certificate from the site's *SSL* tab.
 
 The contact and notify-me endpoints are rate-limited to 5 submissions per minute per IP and have a honeypot field to deter bots.
+
+## Releasing a new version
+
+Add an entry to the top of `resources/changelog/releases.php` (version, date, status, summary, changes). The changelog page, the RSS feed and the `softwareVersion` in the structured data pick it up on deploy. Set `status` to `released` and fill in `date` when the build is live on Google Play; until then it shows as "in review" with no date.
 
 ## Launch day
 

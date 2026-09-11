@@ -58,7 +58,7 @@
             <div class="info-card">
                 <h3>More guides</h3>
                 <ul class="guide-list">
-                    @foreach (['audiobookshelf' => 'Audiobookshelf', 'transcripts' => 'Transcripts', 'formats' => 'Formats and chapters', 'android-auto' => 'Android Auto', 'sync-protocol' => 'Sync protocol', 'pro' => 'Kithara Pro'] as $name => $label)
+                    @foreach (['audiobookshelf' => 'Audiobookshelf', 'transcripts' => 'Transcripts', 'formats' => 'Formats and chapters', 'android-auto' => 'Android Auto', 'sync-protocol' => 'Sync protocol', 'pro' => 'Kithara Pro', 'compare' => 'Comparisons', 'changelog' => 'Changelog'] as $name => $label)
                         @unless (request()->routeIs($name))
                             <li><a href="{{ route($name) }}">{{ $label }}</a></li>
                         @endunless

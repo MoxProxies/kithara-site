@@ -45,9 +45,15 @@
         ],
         'author' => ['@id' => url('/#organization')],
         'publisher' => ['@id' => url('/#organization')],
+        'releaseNotes' => route('changelog'),
         'termsOfService' => route('terms'),
         'privacyPolicy' => route('privacy'),
     ];
+
+    if ($released = \App\Support\Releases::latestReleased()) {
+        $app['softwareVersion'] = $released['version'];
+        $app['dateModified'] = $released['date'];
+    }
 
     if (config('kithara.play_live')) {
         $app['installUrl'] = config('kithara.play_store_url');

@@ -17,6 +17,11 @@ class GuidePagesTest extends TestCase
             'formats' => ['/formats', 'Where chapters come from'],
             'android-auto' => ['/android-auto', 'Voice search'],
             'sync-protocol' => ['/sync-protocol', 'How conflicts are resolved'],
+            'changelog' => ['/changelog', '1.0.0'],
+            'compare' => ['/compare', 'How these are written'],
+            'compare.smart-audiobook-player' => ['/compare/smart-audiobook-player', 'Where Smart AudioBook Player is the better choice'],
+            'compare.audiobookshelf-app' => ['/compare/audiobookshelf-app', 'Or use both'],
+            'compare.audible' => ['/compare/audible', 'Where Audible is the right choice'],
         ];
     }
 
@@ -56,5 +61,29 @@ class GuidePagesTest extends TestCase
 
         config(['kithara.play_live' => true, 'kithara.play_store_url' => 'https://play.google.com/store/apps/details?id=com.kithara']);
         $this->get('/pro')->assertSee('Get it on Google Play')->assertDontSee('in review with Google Play');
+    }
+
+    public function test_changelog_feed_lists_every_release(): void
+    {
+        $xml = $this->get('/changelog.xml')
+            ->assertOk()
+            ->assertHeader('Content-Type', 'application/rss+xml; charset=utf-8')
+            ->getContent();
+
+        $items = simplexml_load_string($xml)->channel->item;
+        $this->assertCount(\App\Support\Releases::all()->count(), $items);
+        $this->assertStringContainsString('1.0.0', (string) $items[0]->title);
+    }
+
+    public function test_app_schema_only_reports_a_version_once_one_has_shipped(): void
+    {
+        $html = $this->get('/')->getContent();
+        $shipped = \App\Support\Releases::latestReleased();
+
+        if ($shipped) {
+            $this->assertStringContainsString('"softwareVersion":"'.$shipped['version'].'"', $html);
+        } else {
+            $this->assertStringNotContainsString('softwareVersion', $html);
+        }
     }
 }
