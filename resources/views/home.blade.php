@@ -15,25 +15,8 @@
             <p class="hero-note">Free to listen, with no ads and no time limit. No account, no analytics, no telemetry.</p>
         </div>
 
-        <div class="phone" aria-hidden="true">
-            <div class="np-cover">The Long Road Home</div>
-            <div>
-                <p class="np-title">The Long Road Home</p>
-                <p class="np-author">Narrated by Eleanor Vance</p>
-                <p class="np-chapter">Chapter 12 · The Harbour</p>
-            </div>
-            <div>
-                <div class="np-progress"><span></span></div>
-                <div class="np-times"><span>4:12:36</span><span>−5:48:10</span></div>
-            </div>
-            <div class="np-controls">
-                <span class="ctrl">1.25×</span>
-                <span class="ctrl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg></span>
-                <span class="ctrl play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-                <span class="ctrl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5V2l4 4-4 4V7a5 5 0 1 0 5 5h2a7 7 0 1 1-7-7z"/></svg></span>
-                <span class="ctrl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3a9 9 0 1 0 9 9M12 7v5l3 2"/></svg></span>
-            </div>
-            <div class="np-meta"><span>Sleep timer <b>End of chapter</b></span><span><b>Pinned</b></span></div>
+        <div class="phone">
+            <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1212" alt="Appollo playing The Cartographer's Daughter: chapter list, progress bar, 10 second skips, speed, sleep timer, bookmarks and transcript controls" fetchpriority="high">
         </div>
     </div>
 </section>
@@ -78,6 +61,34 @@
                 <h3>Bookmarks, search and sort</h3>
                 <p>Label a moment and jump back to it later. Search, filter and sort your library, pin favourites, and let Appollo mark a book finished at 99% so it drops out of your way.</p>
             </article>
+        </div>
+    </div>
+</section>
+
+{{-- Screens --}}
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Screens</span>
+            <h2>Quiet, dark, and out of your way</h2>
+        </div>
+        <div class="screens">
+            <figure class="screen">
+                <img src="{{ asset('img/screens/library.webp') }}" srcset="{{ asset('img/screens/library.webp') }} 1x, {{ asset('img/screens/library@2x.webp') }} 2x" width="540" height="1212" alt="Library list with progress, time left and pinned books" loading="lazy">
+                <figcaption>Library, with progress and time left at a glance</figcaption>
+            </figure>
+            <figure class="screen">
+                <img src="{{ asset('img/screens/grid.webp') }}" srcset="{{ asset('img/screens/grid.webp') }} 1x, {{ asset('img/screens/grid@2x.webp') }} 2x" width="540" height="1212" alt="Library in cover grid view filtered to books in progress" loading="lazy">
+                <figcaption>Cover grid, filtered to what you are reading</figcaption>
+            </figure>
+            <figure class="screen">
+                <img src="{{ asset('img/screens/stats.webp') }}" srcset="{{ asset('img/screens/stats.webp') }} 1x, {{ asset('img/screens/stats@2x.webp') }} 2x" width="540" height="1212" alt="Listening stats: today, streak, this week, all time and a 30-day chart" loading="lazy">
+                <figcaption>Stats with a daily goal, streak and 30-day chart</figcaption>
+            </figure>
+            <figure class="screen">
+                <img src="{{ asset('img/screens/player.webp') }}" srcset="{{ asset('img/screens/player.webp') }} 1x, {{ asset('img/screens/player@2x.webp') }} 2x" width="540" height="1212" alt="Now playing screen with chapter, progress and controls" loading="lazy">
+                <figcaption>Player with chapters, timer, bookmarks and transcript</figcaption>
+            </figure>
         </div>
     </div>
 </section>
