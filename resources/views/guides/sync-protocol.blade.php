@@ -7,7 +7,7 @@
 
 @push('head')
 <script type="application/ld+json">{!! json_encode([
-    '@context' => 'https://schema.org',
+    '@'.'context' => 'https://schema.org',
     '@type' => 'TechArticle',
     'headline' => 'The Kithara sync protocol, version 1',
     'description' => 'An HTTP and JSON contract for self-hosted audiobook servers that Kithara can stream from and sync progress and bookmarks to.',

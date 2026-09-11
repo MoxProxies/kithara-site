@@ -8,7 +8,7 @@ class ContactRequest extends FormRequest
 {
     public const TOPICS = [
         'support' => 'Help with the app',
-        'billing' => 'Billing or subscription',
+        'billing' => 'Billing or the Pro purchase',
         'feedback' => 'Feature request or feedback',
         'press' => 'Press or partnership',
         'other' => 'Something else',

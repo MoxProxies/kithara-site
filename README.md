@@ -39,7 +39,7 @@ All company-specific details are read from `.env` via `config/kithara.php`, so n
 
 ```dotenv
 KITHARA_COMPANY_NAME="Charitou Multimedia Solutions Inc."  # legal entity shown in T&Cs, privacy, footer
-KITHARA_COMPANY_ADDRESS="123 Example Street, ..."  # optional, shown at the end of legal pages
+KITHARA_COMPANY_ADDRESS=                            # optional; leave empty until you have a real mailing address
 KITHARA_PROVINCE=Ontario                            # province whose law governs the T&Cs
 KITHARA_SUPPORT_EMAIL=support@example.com           # public support address
 KITHARA_CONTACT_TO=hello@example.com                # where contact form submissions are sent

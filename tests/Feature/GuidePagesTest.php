@@ -59,10 +59,10 @@ class GuidePagesTest extends TestCase
     public function test_pro_page_follows_the_play_live_flag(): void
     {
         config(['kithara.play_live' => false]);
-        $this->get('/pro')->assertSee('in review with Google Play')->assertDontSee('Get it on Google Play');
+        $this->get('/pro')->assertSee('not on Google Play yet')->assertDontSee('Get it on Google Play');
 
         config(['kithara.play_live' => true, 'kithara.play_store_url' => 'https://play.google.com/store/apps/details?id=com.kithara']);
-        $this->get('/pro')->assertSee('Get it on Google Play')->assertDontSee('in review with Google Play');
+        $this->get('/pro')->assertSee('Get it on Google Play')->assertDontSee('not on Google Play yet');
     }
 
     public function test_changelog_feed_lists_every_release(): void

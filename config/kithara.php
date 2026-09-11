@@ -14,7 +14,9 @@ return [
 
     'company_name' => env('KITHARA_COMPANY_NAME', 'Charitou Multimedia Solutions Inc.'),
 
-    'company_address' => env('KITHARA_COMPANY_ADDRESS', ''),
+    // Leave empty until there is a real mailing address; the placeholder from older
+    // .env files is ignored so it can never reach the legal pages or the structured data.
+    'company_address' => str_contains((string) env('KITHARA_COMPANY_ADDRESS', ''), 'Example Street') ? '' : trim((string) env('KITHARA_COMPANY_ADDRESS', '')),
 
     // Canadian province whose law governs the Terms. Canada itself is assumed.
     'province' => env('KITHARA_PROVINCE', 'Ontario'),

@@ -77,4 +77,23 @@ class SeoTest extends TestCase
             ->assertSee('Page not found · Kithara')
             ->assertSee('Back to Kithara');
     }
+
+    public function test_every_json_ld_block_on_every_page_is_valid_schema_org(): void
+    {
+        $paths = ['/', '/contact', '/terms', '/privacy', '/pro', '/audiobookshelf', '/transcripts', '/formats',
+            '/android-auto', '/sync-protocol', '/changelog', '/compare', '/compare/audible',
+            '/how-to/add-chapters-to-m4b', '/how-to/audiobookshelf-setup'];
+
+        foreach ($paths as $path) {
+            $html = $this->get($path)->assertOk()->getContent();
+            preg_match_all('#<script type="application/ld\+json">(.*?)</script>#s', $html, $blocks);
+            $this->assertNotEmpty($blocks[1], "$path has no structured data");
+
+            foreach ($blocks[1] as $json) {
+                $data = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
+                $this->assertSame('https://schema.org', $data['@context'] ?? null, "$path: a JSON-LD block is missing @context (Blade directive leak?)");
+                $this->assertStringNotContainsString('<?php', $json, "$path: compiled PHP leaked into JSON-LD");
+            }
+        }
+    }
 }

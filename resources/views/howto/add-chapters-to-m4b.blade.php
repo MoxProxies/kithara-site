@@ -7,7 +7,7 @@
 
 @push('head')
 <script type="application/ld+json">{!! json_encode([
-    '@context' => 'https://schema.org',
+    '@'.'context' => 'https://schema.org',
     '@type' => 'HowTo',
     'name' => 'How to add chapters to an m4b audiobook',
     'description' => 'Add or fix chapter markers in an m4b audiobook using ffmpeg, without re-encoding the audio.',

@@ -41,6 +41,6 @@
 <div class="hero-actions">@include('partials.store-buttons')</div>
 @else
 <h2 id="get">Availability</h2>
-<p>Kithara is in review with Google Play. The Pro price will appear in the listing once it is live. <a href="{{ route('home') }}#download">Leave your email</a> and we will send one message the day it lands.</p>
+<p>Kithara is not on Google Play yet. The Pro price will appear in the listing once it is live. <a href="{{ route('home') }}#download">Leave your email</a> and we will send one message the day it lands.</p>
 @endif
 @endsection

@@ -69,6 +69,6 @@
         'inLanguage' => 'en',
     ];
 
-    $graph = ['@context' => 'https://schema.org', '@graph' => [$org, $site, $app]];
+    $graph = ['@'.'context' => 'https://schema.org', '@graph' => [$org, $site, $app]];
 @endphp
 <script type="application/ld+json">{!! json_encode($graph, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>

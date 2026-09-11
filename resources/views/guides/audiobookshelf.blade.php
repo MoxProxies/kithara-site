@@ -19,7 +19,7 @@
 <h2 id="setup">Setting it up</h2>
 <p>No server yet? Start with <a href="{{ route('howto.audiobookshelf-setup') }}">the full walkthrough</a>, from Docker to the phone. If Audiobookshelf is already running:</p>
 <ol>
-    <li>Open <strong>Library</strong>, tap the <strong>+</strong> icon, then <strong>Add a library</strong> and choose <strong>Audiobookshelf</strong>.</li>
+    <li>Open <strong>Library</strong>, tap the menu in the top corner, then <strong>Manage libraries</strong> and <strong>Add a library</strong>. (With no libraries yet, the empty screen offers <strong>Add a library</strong> directly.) Choose <strong>Audiobookshelf server</strong>.</li>
     <li>Enter the address exactly as you would type it into a browser, including the port, for example <code>http://192.168.1.20:13378</code>. Plain <code>http</code> on your home network is fine and is assumed when you leave the scheme off. If you reach the server over the internet, use <code>https</code>.</li>
     <li>Enter your Audiobookshelf username and password. Kithara exchanges them for a long-lived token at sign-in and then discards the password; only the token is stored on the device.</li>
     <li>The first sync starts immediately and fetches every item's detail, so a large library takes a minute. Later syncs only fetch what changed.</li>

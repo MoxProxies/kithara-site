@@ -7,7 +7,7 @@
 
 @push('head')
 <script type="application/ld+json">{!! json_encode([
-    '@context' => 'https://schema.org',
+    '@'.'context' => 'https://schema.org',
     '@type' => 'HowTo',
     'name' => 'How to set up Audiobookshelf and listen on Android',
     'description' => 'Install an Audiobookshelf server, organise a library, expose it safely, and connect the Kithara Android app.',
@@ -95,7 +95,7 @@
 <h2 id="kithara">5. Connect Kithara</h2>
 <ol>
     <li>Install Kithara on your phone. Server libraries are part of <a href="{{ route('pro') }}">Kithara Pro</a>.</li>
-    <li>Open <strong>Library</strong>, tap <strong>+</strong>, then <strong>Add a library</strong> and choose <strong>Audiobookshelf server</strong>.</li>
+    <li>Open <strong>Library</strong>. On a fresh install the screen offers <strong>Add a library</strong> directly; otherwise open the menu in the top corner, then <strong>Manage libraries</strong> and <strong>Add a library</strong>. Choose <strong>Audiobookshelf server</strong>.</li>
     <li><strong>Server address</strong>: exactly what you type into the browser, including the port. On the LAN or a VPN that is something like <code>http://192.168.1.20:13378</code>. Behind a reverse proxy it is <code>https://books.example.com</code>. If you leave off the scheme, Kithara assumes <code>http://</code>.</li>
     <li><strong>Username</strong> and <strong>Password</strong>: the user you created in step 3. Kithara exchanges them for a token and discards the password. Give the library a name if you like, then tap <strong>Connect</strong>.</li>
     <li>The first sync fetches every book's details. After that, only what changed on the server is fetched.</li>

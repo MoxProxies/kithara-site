@@ -45,7 +45,7 @@
     <li><strong>Server credentials</strong>: if you connect a server, your password is exchanged for an access token at sign-in and then discarded. Only the token and the server address are stored.</li>
     <li><strong>Downloads</strong>: books you choose to pin for offline use are stored in the App's private storage.</li>
 </ul>
-<p>Uninstalling the App removes all of this from your device.</p>
+<p>This data is included in Android's standard app backup if you have backup enabled on your device, which is governed by Google's policies, not ours. Uninstalling the App removes all of it from your device.</p>
 
 <h2 id="servers">3. Servers you connect to</h2>
 <p>You can connect the App to an Audiobookshelf server, or to a server implementing the Kithara sync protocol. When you do, the App sends that server your credentials at sign-in, and afterwards your listening positions and library requests, so that your progress stays in step across devices.</p>
@@ -53,7 +53,7 @@
 
 <h2 id="transcripts">4. Transcripts</h2>
 <p>Kithara Pro can turn a chapter into timed text so you can read along or search a book. <strong>Transcription runs entirely on your device.</strong> No audio, text or metadata is uploaded anywhere, and transcripts are stored only on the device alongside your other listening data.</p>
-<p>Speech models are not bundled with the App because of their size (roughly 100 MB to 360 MB). The first time you use transcripts, the App downloads the model you choose from a public mirror maintained by the sherpa-onnx project on Hugging Face. That download is an ordinary HTTPS request and, like any web request, exposes your IP address and the file requested to Hugging Face under <a href="https://huggingface.co/privacy" rel="noopener">their privacy policy</a>. Nothing about you, your books or your listening is included. Once downloaded, the model stays on the device and no further requests are made.</p>
+<p>Speech models are not bundled with the App because of their size (roughly 100 MB to 360 MB). The first time you use transcripts, the App downloads the Whisper model you choose from a public mirror maintained by the sherpa-onnx project on Hugging Face (<code>huggingface.co</code>), and a small voice-activity model from the same project's releases on GitHub (<code>github.com</code>). Those downloads are ordinary HTTPS requests and, like any web request, expose your IP address and the file requested to <a href="https://huggingface.co/privacy" rel="noopener">Hugging Face</a> and <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub</a> under their own privacy policies. Nothing about you, your books or your listening is included. Once downloaded, the model stays on the device and no further requests are made.</p>
 
 <h2 id="play">5. Google Play</h2>
 <p>The App is distributed through Google Play, and Kithara Pro is sold as a one-time in-app purchase processed by Google Play Billing. Google collects information about your download, purchases and device under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>. We receive purchase confirmations, and Google may share aggregated, anonymised crash and installation statistics with us through the Play Console. We never receive your payment details.</p>
@@ -61,10 +61,12 @@
 <h2 id="permissions">6. Android permissions</h2>
 <p>The App requests only what it needs to play audio:</p>
 <ul>
-    <li><strong>Notifications</strong>: to show playback controls. Playback works without it.</li>
-    <li><strong>Foreground service and wake lock</strong>: to keep playing while the screen is off.</li>
-    <li><strong>Internet</strong>: to talk to servers you add, to download a speech model for transcripts, and for Google Play Billing. Nothing else uses it.</li>
-    <li><strong>Folder access</strong>: only for folders you explicitly pick when adding a library.</li>
+    <li><strong>Notifications</strong>: for playback controls and for download and transcription progress. Playback works without it.</li>
+    <li><strong>Foreground service</strong>: so playback, downloads and transcription keep running when the App is not on screen.</li>
+    <li><strong>Wake lock</strong>: to keep audio playing with the screen off.</li>
+    <li><strong>Internet and network state</strong>: for the connections described above, and to honour a Wi-Fi-only preference. Nothing else uses them.</li>
+    <li><strong>Run at startup</strong>: to resume interrupted downloads after a reboot. The App does not otherwise start itself.</li>
+    <li><strong>Folder access</strong>: only for folders you explicitly pick through Android's file picker. The App never asks for broad storage access.</li>
 </ul>
 <p>The App does not request access to your location, contacts, camera, microphone or other apps. The App does not use the telephony permission; it detects interruptions such as calls through audio focus instead.</p>
 

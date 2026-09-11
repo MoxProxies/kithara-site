@@ -10,7 +10,7 @@
 
 @push('head')
 <script type="application/ld+json">{!! json_encode([
-    '@context' => 'https://schema.org',
+    '@'.'context' => 'https://schema.org',
     '@type' => 'BreadcrumbList',
     'itemListElement' => [
         ['@type' => 'ListItem', 'position' => 1, 'name' => 'Kithara', 'item' => route('home')],
@@ -52,7 +52,7 @@
                     <p>Free on Google Play for Android 8.0 and later.</p>
                     <div class="hero-actions" style="margin: 1rem 0 0;">@include('partials.store-buttons')</div>
                 @else
-                    <p>Kithara is in review with Google Play. <a href="{{ route('home') }}#download">Leave your email</a> and we will tell you the day it lands.</p>
+                    <p>Kithara is not on Google Play yet. <a href="{{ route('home') }}#download">Leave your email</a> and we will tell you the day it lands.</p>
                 @endif
             </div>
             <div class="info-card">

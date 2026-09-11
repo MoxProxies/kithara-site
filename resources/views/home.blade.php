@@ -61,7 +61,7 @@
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></div>
                 <h3>Bookmarks, search and sort</h3>
-                <p>Label a moment and jump back to it later. Search, filter and sort your library, pin favourites, and let Kithara mark a book finished at 99% so it drops out of your way.</p>
+                <p>Label a moment and jump back to it later. Search, filter and sort your library, pin favourites, and mark a book finished with a tap. Kithara also finishes it when playback runs off the end, never just because you peeked at the last chapter.</p>
             </article>
         </div>
     </div>
@@ -220,7 +220,7 @@
                 </div>
             @else
                 <h2>Coming soon to Google Play</h2>
-                <p>Kithara is in review with Google Play. Leave your email and we will send one message the day it lands, then forget you.</p>
+                <p>Kithara is on its way to Google Play. Leave your email and we will send one message the day it lands, then forget you.</p>
 
                 @if (session('notify_status'))
                     <p class="notify-status ok" role="status">{{ session('notify_status') }}</p>

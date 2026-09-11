@@ -23,6 +23,10 @@ Route::view('/formats', 'guides.formats')->name('formats');
 Route::view('/android-auto', 'guides.android-auto')->name('android-auto');
 Route::view('/sync-protocol', 'guides.sync-protocol')->name('sync-protocol');
 Route::view('/changelog', 'guides.changelog')->name('changelog');
+Route::redirect('/feed', '/changelog.xml', 301);
+Route::redirect('/rss', '/changelog.xml', 301);
+Route::redirect('/feed.xml', '/changelog.xml', 301);
+Route::redirect('/rss.xml', '/changelog.xml', 301);
 Route::get('/changelog.xml', fn () => response()->view('crawlers.changelog-feed')->header('Content-Type', 'application/rss+xml; charset=utf-8'))->name('changelog.feed');
 
 Route::view('/how-to/add-chapters-to-m4b', 'howto.add-chapters-to-m4b')->name('howto.m4b-chapters');

@@ -44,7 +44,7 @@
     ];
 
     $faqSchema = [
-        '@context' => 'https://schema.org',
+        '@'.'context' => 'https://schema.org',
         '@type' => 'FAQPage',
         'mainEntity' => array_map(fn ($qa) => [
             '@type' => 'Question',
