@@ -18,6 +18,7 @@
                     <li><a href="{{ route('sync-protocol') }}">Sync protocol</a></li>
                     <li><a href="{{ route('howto.audiobookshelf-setup') }}">Set up Audiobookshelf</a></li>
                     <li><a href="{{ route('howto.m4b-chapters') }}">Add chapters to an m4b</a></li>
+                    <li><a href="{{ route('howto.leaving-audible') }}">Leaving Audible</a></li>
                     <li><a href="{{ route('compare') }}">Comparisons</a></li>
                     <li><a href="{{ route('changelog') }}">Changelog</a></li>
                 </ul>

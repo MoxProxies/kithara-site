@@ -82,7 +82,7 @@ class SeoTest extends TestCase
     {
         $paths = ['/', '/contact', '/terms', '/privacy', '/pro', '/audiobookshelf', '/transcripts', '/formats',
             '/android-auto', '/sync-protocol', '/changelog', '/compare', '/compare/audible',
-            '/how-to/add-chapters-to-m4b', '/how-to/audiobookshelf-setup'];
+            '/how-to/add-chapters-to-m4b', '/how-to/audiobookshelf-setup', '/how-to/leaving-audible'];
 
         foreach ($paths as $path) {
             $html = $this->get($path)->assertOk()->getContent();

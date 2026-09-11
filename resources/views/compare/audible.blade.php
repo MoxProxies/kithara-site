@@ -38,5 +38,5 @@
 </ul>
 
 <h2 id="both">Using both</h2>
-<p>Plenty of people do: Audible for new releases and exclusives, Kithara for everything bought elsewhere and the backlist on the home server. Listening stats and streaks in Kithara only count what Kithara plays, which is the one real cost of splitting your library.</p>
+<p>Plenty of people do: Audible for new releases and exclusives, Kithara for everything bought elsewhere and the backlist on the home server. Thinking of leaving? <a href="{{ route('howto.leaving-audible') }}">What you keep, and where to buy instead</a>. Listening stats and streaks in Kithara only count what Kithara plays, which is the one real cost of splitting your library.</p>
 @endsection

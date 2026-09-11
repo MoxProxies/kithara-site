@@ -19,6 +19,7 @@ class GuidePagesTest extends TestCase
             'sync-protocol' => ['/sync-protocol', 'How a client resolves conflicts'],
             'howto.m4b-chapters' => ['/how-to/add-chapters-to-m4b', '-map_chapters 1'],
             'howto.audiobookshelf-setup' => ['/how-to/audiobookshelf-setup', 'docker compose up -d'],
+            'howto.leaving-audible' => ['/how-to/leaving-audible', 'Unused credits are forfeited'],
             'changelog' => ['/changelog', '1.0.0'],
             'compare' => ['/compare', 'How these are written'],
             'compare.smart-audiobook-player' => ['/compare/smart-audiobook-player', 'Where Smart AudioBook Player is the better choice'],
@@ -91,7 +92,7 @@ class GuidePagesTest extends TestCase
 
     public function test_how_to_page_carries_howto_schema(): void
     {
-        foreach (['/how-to/add-chapters-to-m4b', '/how-to/audiobookshelf-setup'] as $path) {
+        foreach (['/how-to/add-chapters-to-m4b', '/how-to/audiobookshelf-setup', '/how-to/leaving-audible'] as $path) {
             $this->assertHowToSchema($path);
         }
     }

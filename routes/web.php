@@ -31,6 +31,7 @@ Route::get('/changelog.xml', fn () => response()->view('crawlers.changelog-feed'
 
 Route::view('/how-to/add-chapters-to-m4b', 'howto.add-chapters-to-m4b')->name('howto.m4b-chapters');
 Route::view('/how-to/audiobookshelf-setup', 'howto.audiobookshelf-setup')->name('howto.audiobookshelf-setup');
+Route::view('/how-to/leaving-audible', 'howto.leaving-audible')->name('howto.leaving-audible');
 
 Route::view('/compare', 'compare.index')->name('compare');
 Route::view('/compare/smart-audiobook-player', 'compare.smart-audiobook-player')->name('compare.smart-audiobook-player');

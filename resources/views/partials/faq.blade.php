@@ -39,7 +39,7 @@
         ],
         [
             'Where do I get audiobooks for it?',
-            'Kithara is a player, not a store. It plays DRM-free files you already own: purchases from DRM-free audiobook shops, rips of CDs you own, public-domain recordings such as LibriVox, or anything in your Audiobookshelf library.',
+            'Kithara is a player, not a store. It plays DRM-free files you already own: purchases from DRM-free audiobook shops, rips of CDs you own, public-domain recordings such as LibriVox, or anything in your Audiobookshelf library. The how-to on leaving Audible lists the DRM-free shops.',
         ],
     ];
 
