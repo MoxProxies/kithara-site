@@ -16,6 +16,7 @@
                     <li><a href="{{ route('formats') }}">Formats and chapters</a></li>
                     <li><a href="{{ route('android-auto') }}">Android Auto</a></li>
                     <li><a href="{{ route('sync-protocol') }}">Sync protocol</a></li>
+                    <li><a href="{{ route('howto.m4b-chapters') }}">Add chapters to an m4b</a></li>
                     <li><a href="{{ route('compare') }}">Comparisons</a></li>
                     <li><a href="{{ route('changelog') }}">Changelog</a></li>
                 </ul>

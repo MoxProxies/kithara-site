@@ -12,6 +12,7 @@ Laravel 13 site for Kithara, the Android audiobook player: landing page, contact
 | `/privacy` | `resources/views/legal/privacy.blade.php` | Uses the shared `layouts/legal` chrome |
 | `/pro`, `/audiobookshelf`, `/transcripts`, `/formats`, `/android-auto`, `/sync-protocol` | `resources/views/guides/` | One page per search intent, on the shared `layouts/guide` chrome with breadcrumb schema |
 | `/changelog`, `/changelog.xml` | `guides/changelog.blade.php`, `crawlers/changelog-feed.blade.php` | Both read `resources/changelog/releases.php` |
+| `/how-to/add-chapters-to-m4b` | `resources/views/howto/` | How-to articles with HowTo schema; every ffmpeg command was run against a generated file before publishing |
 | `/compare/...` | `resources/views/compare/` | Comparison pages against Smart AudioBook Player, the Audiobookshelf app and Audible |
 | `/sitemap.xml`, `/robots.txt`, `/llms.txt` | `resources/views/crawlers/` | Generated, so they carry the deployed host |
 

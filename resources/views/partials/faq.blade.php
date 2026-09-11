@@ -19,7 +19,7 @@
         ],
         [
             'How does Kithara find chapters?',
-            'It reads them out of the files: the chpl chapter atom and QuickTime chapter track in m4b files, ID3 CHAP frames in mp3s, a .cue sheet beside a single large file, or the chapter list from your server. If a multi-file book has no chapter marks, each file becomes a chapter.',
+            'It reads them out of the files: the chpl chapter atom and QuickTime chapter track in m4b files, ID3 CHAP frames in mp3s, a .cue sheet beside a single large file, or the chapter list from your server. If a multi-file book has no chapter marks, each file becomes a chapter. Files with no chapters at all can be fixed in ten minutes with ffmpeg; see the how-to on this site.',
         ],
         [
             'Is there an iPhone or iOS version?',

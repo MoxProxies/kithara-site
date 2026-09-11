@@ -38,7 +38,7 @@
 <p>Whichever source they come from, chapters are stored against the book-wide timeline. Chapter 14 behaves identically whether the book is one m4b, forty-two mp3s, or streamed in three parts from a server, and a chapter is allowed to span a file boundary.</p>
 
 <h2 id="troubleshooting">"My chapters are not showing"</h2>
-<p>If a single-file book shows no chapters, neither a <code>chpl</code> atom nor a chapter text track was found in it. Some sellers strip them, and some conversion tools drop them on the way to m4b. Two fixes:</p>
+<p>If a single-file book shows no chapters, neither a <code>chpl</code> atom nor a chapter text track was found in it. Some sellers strip them, and some conversion tools drop them on the way to m4b. Two fixes, both walked through step by step in <a href="{{ route('howto.m4b-chapters') }}">How to add chapters to an m4b</a>:</p>
 <ul>
     <li>Re-mux the file with chapters using ffmpeg, m4b-tool or AudiobookBuilder; these all write the <code>chpl</code> atom Kithara reads first.</li>
     <li>Put a <code>.cue</code> sheet next to the file with the same base name. Kithara will use it.</li>
