@@ -5,13 +5,28 @@
             Kithara
         </a>
 
-        <ul class="footer-links">
-            <li><a href="{{ route('home') }}#features">Features</a></li>
-            <li><a href="{{ route('home') }}#pro">Pro</a></li>
-            <li><a href="{{ route('contact') }}">Contact</a></li>
-            <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
-            <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
-        </ul>
+        <nav class="footer-nav" aria-label="Footer">
+            <div>
+                <h4>Product</h4>
+                <ul class="footer-links">
+                    <li><a href="{{ route('home') }}#features">Features</a></li>
+                    <li><a href="{{ route('pro') }}">Kithara Pro</a></li>
+                    <li><a href="{{ route('audiobookshelf') }}">Audiobookshelf</a></li>
+                    <li><a href="{{ route('transcripts') }}">Transcripts</a></li>
+                    <li><a href="{{ route('formats') }}">Formats and chapters</a></li>
+                    <li><a href="{{ route('android-auto') }}">Android Auto</a></li>
+                    <li><a href="{{ route('sync-protocol') }}">Sync protocol</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
+                    <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <p class="copyright">&copy; {{ date('Y') }} {{ rtrim(config('kithara.company_name'), '.') }}. All rights reserved.</p>
     </div>

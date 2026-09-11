@@ -15,6 +15,14 @@ Route::post('/notify', [NotifyController::class, 'store'])
     ->middleware('throttle:5,1')
     ->name('notify');
 
+// Feature and documentation pages, one per search intent
+Route::view('/pro', 'guides.pro')->name('pro');
+Route::view('/audiobookshelf', 'guides.audiobookshelf')->name('audiobookshelf');
+Route::view('/transcripts', 'guides.transcripts')->name('transcripts');
+Route::view('/formats', 'guides.formats')->name('formats');
+Route::view('/android-auto', 'guides.android-auto')->name('android-auto');
+Route::view('/sync-protocol', 'guides.sync-protocol')->name('sync-protocol');
+
 Route::view('/terms', 'legal.terms')->name('terms');
 Route::view('/privacy', 'legal.privacy')->name('privacy');
 

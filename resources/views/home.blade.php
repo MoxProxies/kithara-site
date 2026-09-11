@@ -56,7 +56,7 @@
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.5-5h-11zM7 12l1.5-4h7L17 12M6 17v2m12-2v2"/></svg></div>
                 <h3>Android Auto and Bluetooth</h3>
-                <p>Browse by continue listening, author or library on the head unit, with voice search over title, author, narrator and series. A press of play on your headphones picks up your last book with no app open.</p>
+                <p>Browse by continue listening, author or library on the head unit, with voice search over title, author, narrator and series. A press of play on your headphones picks up your last book with no app open. <a href="{{ route('android-auto') }}">Kithara in the car</a>.</p>
             </article>
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></div>
@@ -101,7 +101,7 @@
         <div class="section-head" data-reveal>
             <span class="eyebrow">Kithara Pro</span>
             <h2>Everything you need to listen is free. Pro makes it a system.</h2>
-            <p>Pro is a one-time unlock through Google Play. No subscription, no renewal. Stats and achievements are recorded from day one, so unlocking later shows your full history.</p>
+            <p>Pro is a one-time unlock through Google Play. No subscription, no renewal. Stats and achievements are recorded from day one, so unlocking later shows your full history. <a href="{{ route('pro') }}">Everything Pro includes</a>.</p>
         </div>
 
         <div class="plans" data-reveal-group>
@@ -119,7 +119,7 @@
             <div class="plan plan-pro">
                 <h3>Pro <span class="plan-tag">One-time purchase</span></h3>
                 <ul class="plan-list">
-                    <li><strong>Server libraries:</strong> Audiobookshelf and the open Kithara sync protocol</li>
+                    <li><strong>Server libraries:</strong> <a href="{{ route('audiobookshelf') }}">Audiobookshelf</a> and the open <a href="{{ route('sync-protocol') }}">Kithara sync protocol</a></li>
                     <li><strong>Stream, download and sync</strong> your position across devices</li>
                     <li><strong>Several libraries</strong> at once, each with its own tab</li>
                     <li><strong>Transcripts:</strong> on-device speech-to-text for any chapter</li>
@@ -139,7 +139,7 @@
             <span class="eyebrow">Transcripts · Pro</span>
             <h2>Read along, or find that one line</h2>
             <p class="muted">Kithara turns any chapter into timed text, entirely on your phone. Nothing is uploaded and nothing leaves the device. Tap a passage to jump there, or search the whole book for a phrase you half remember.</p>
-            <p class="muted">Pick the speech model that suits your phone: tiny is fastest, small is closest to a dictation app. Models download once on first use and long chapters transcribe in the background with progress in the notification.</p>
+            <p class="muted">Pick the speech model that suits your phone: tiny is fastest, small is closest to a dictation app. Models download once on first use and long chapters transcribe in the background with progress in the notification. <a href="{{ route('transcripts') }}">How transcripts work</a>.</p>
         </div>
         <div class="transcript-demo" aria-hidden="true" data-reveal data-transcribe>
             <div class="transcript-search">Search the whole book</div>
@@ -161,7 +161,7 @@
         <div class="steps" data-reveal-group>
             <div class="step">
                 <h3>Add a library</h3>
-                <p>Pick a folder on the device, or sign in to your Audiobookshelf server. Kithara reads titles, authors, narrators, covers and chapters from the files, and never loses your position on a rescan.</p>
+                <p>Pick a folder on the device, or sign in to your <a href="{{ route('audiobookshelf') }}">Audiobookshelf server</a>. Kithara reads titles, authors, narrators, covers and chapters from the files, and never loses your position on a rescan.</p>
             </div>
             <div class="step">
                 <h3>Press play</h3>
@@ -175,7 +175,7 @@
 
         <div class="section-head" style="margin-top: 3.5rem; margin-bottom: 0;" data-reveal>
             <h3>Plays the files you already have</h3>
-            <p style="font-size: 1rem;">DRM-free audiobooks from any store, library rip, or your own recordings. Audible .aax files need their DRM removed first.</p>
+            <p style="font-size: 1rem;">DRM-free audiobooks from any store, library rip, or your own recordings. Audible .aax files need their DRM removed first. <a href="{{ route('formats') }}">Formats and chapters in detail</a>.</p>
         </div>
         <div class="formats" data-reveal-group>
             <span class="chip">M4B</span>

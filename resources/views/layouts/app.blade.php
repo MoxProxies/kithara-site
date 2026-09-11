@@ -8,7 +8,11 @@
     @php
         // yieldContent() returns escaped HTML; decode once so {{ }} below does not double-escape.
         $title = html_entity_decode(trim($__env->yieldContent('title')), ENT_QUOTES | ENT_HTML5);
-        $pageTitle = $title !== '' ? "{$title} · Kithara" : 'Kithara: Audiobook Player for Android with Audiobookshelf Sync';
+        $pageTitle = match (true) {
+            $title === '' => 'Kithara: Audiobook Player for Android with Audiobookshelf Sync',
+            str_starts_with($title, 'Kithara') => $title,
+            default => "{$title} · Kithara",
+        };
         $description = html_entity_decode(trim($__env->yieldContent('meta_description', 'Kithara is a free audiobook player for Android. Point it at a folder on your phone, an Audiobookshelf server, or both. It reads chapters out of the files themselves and keeps your place in step across devices. No account, no analytics.')), ENT_QUOTES | ENT_HTML5);
         $ogImage = asset('img/og.png');
     @endphp

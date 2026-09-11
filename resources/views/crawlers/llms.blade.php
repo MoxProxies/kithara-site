@@ -16,6 +16,12 @@
 ## Pages
 
 - [Home]({{ route('home') }}): features, Pro, transcripts, FAQ
+- [Kithara Pro]({{ route('pro') }}): free versus Pro, one-time purchase details
+- [Audiobookshelf]({{ route('audiobookshelf') }}): setup, streaming, downloads, sync rules
+- [Transcripts]({{ route('transcripts') }}): on-device Whisper, model sizes, privacy
+- [Formats and chapters]({{ route('formats') }}): supported formats, folder conventions, chapter sources
+- [Android Auto]({{ route('android-auto') }}): car screen, voice search, Bluetooth
+- [Sync protocol]({{ route('sync-protocol') }}): the six-route HTTP spec for self-hosted servers
 - [Contact]({{ route('contact') }}): support and press
 - [Terms & Conditions]({{ route('terms') }})
 - [Privacy Policy]({{ route('privacy') }})
