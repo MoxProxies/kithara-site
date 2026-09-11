@@ -103,12 +103,12 @@ document.querySelectorAll('[data-type-cycle]').forEach(async (el) => {
     let index = phrases.indexOf(original.trim());
     if (index < 0) index = 0;
 
-    await sleep(2600);
+    await sleep(3200);
     for (;;) {
-        await eraseFrom(el, 28);
+        await eraseFrom(el, 45);
         index = (index + 1) % phrases.length;
-        await typeInto(el, phrases[index], 48);
-        await sleep(2800);
+        await typeInto(el, phrases[index], 95);
+        await sleep(3800);
     }
 });
 
@@ -137,11 +137,11 @@ document.querySelectorAll('[data-transcribe]').forEach(async (panel) => {
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
             line.classList.add('active');
-            await typeInto(line.querySelector('[data-line-text]'), texts[i], 22);
+            await typeInto(line.querySelector('[data-line-text]'), texts[i], 40);
             line.classList.replace('active', 'done');
-            await sleep(500);
+            await sleep(700);
         }
-        await sleep(3200);
+        await sleep(4000);
     }
 });
 

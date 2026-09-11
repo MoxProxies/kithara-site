@@ -6,7 +6,7 @@
     <div class="container hero-grid">
         <div>
             <span class="eyebrow">Audiobook player for Android</span>
-            <h1>Your library.<br>Your pace.<br>Always <span class="type" data-type-cycle='["in your pocket.","in the car.","where you left off.","in step.","yours."]'>in your pocket.</span></h1>
+            <h1>Your library.<br>Your pace.<br><span class="type" data-type-cycle='["In your pocket.","In your car.","Where you left off.","On your terms.","Always with you."]'>In your pocket.</span></h1>
             <p class="lead">Point Appollo at a folder on your phone, a server on your home network, or both. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
             <div class="hero-actions">
                 @include('partials.store-buttons')
