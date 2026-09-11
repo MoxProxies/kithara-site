@@ -91,4 +91,15 @@ The site needs no database. Sessions and cache use the `file` driver, the contac
 
 5. **SSL**: issue a Let's Encrypt certificate from the site's *SSL* tab.
 
-The contact endpoint is rate-limited to 5 submissions per minute per IP and has a honeypot field to deter bots.
+The contact and notify-me endpoints are rate-limited to 5 submissions per minute per IP and have a honeypot field to deter bots.
+
+## Launch day
+
+While `KITHARA_PLAY_LIVE=false`, the download band collects email addresses into `storage/app/private/notify-list.csv`. When the Play listing is approved:
+
+1. Set `KITHARA_PLAY_LIVE=true` and the real `KITHARA_PLAY_STORE_URL` in Forge, then deploy.
+2. Check the email looks right: `php artisan kithara:announce-launch --preview=you@example.com`
+3. See who is on the list: `php artisan kithara:announce-launch --dry-run`
+4. Send it: `php artisan kithara:announce-launch` (add `--force` to skip the prompt).
+
+A clean run deletes the list, which is what the privacy policy promises. If any sends fail, only those addresses are kept and a second run retries them. Brevo's free tier caps at 300 emails a day; split a bigger list across days by running the command again the next day.
