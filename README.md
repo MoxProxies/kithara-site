@@ -45,10 +45,10 @@ The "Last updated" date on the legal pages is set in `config/appollo.php`.
 
 ## Deploying on Laravel Forge
 
-The site needs no database. Sessions and cache use the `file` driver and the contact form sends mail synchronously.
+The site needs no database. Sessions and cache use the `file` driver, the contact form sends mail synchronously, and there are no migrations.
 
 1. **Create the site** on your Forge server (PHP 8.4, project type "Laravel"), pointing the web directory at `/public`.
-2. **Connect the repository** and enable Quick Deploy. The default Forge deploy script works; make sure it includes the asset build:
+2. **Connect the repository** and enable Quick Deploy. Use this deploy script. It differs from the Forge default in two ways: it builds the Vite assets, and it does **not** run `php artisan migrate` (the shared `forge` database on a Forge server often already holds another site's tables, which makes the default migrate step fail):
 
    ```bash
    cd /home/forge/your-site.com

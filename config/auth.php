@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\User;
-
 return [
 
     /*
@@ -64,7 +62,8 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', User::class),
+            // The site has no users; kept so the auth config stays valid.
+            'model' => env('AUTH_MODEL', 'App\Models\User'),
         ],
 
         // 'users' => [
