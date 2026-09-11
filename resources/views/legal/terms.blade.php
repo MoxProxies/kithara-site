@@ -69,25 +69,26 @@
 </ul>
 
 <h2 id="purchases">7. Purchases</h2>
-<p>The App is free to download. Some features may be offered as one-time in-app purchases or subscriptions. All purchases are processed by Google Play Billing; we never see or store your payment details.</p>
+<p>The App is free to download and everything needed to listen is free, with no advertising and no time limit. <strong>Appollo Pro</strong> is a one-time in-app purchase that unlocks additional features such as server libraries, downloads, cross-device sync, multiple libraries, transcripts, statistics, achievements and themes. Pro is processed by Google Play Billing; we never see or store your payment details.</p>
 <ul>
-    <li><strong>Pricing.</strong> Prices are shown in Google Play before you buy and may vary by region. Taxes may be added.</li>
-    <li><strong>Subscriptions.</strong> If a subscription is offered, it renews automatically at the end of each billing period unless you cancel through your Google Play subscription settings before the renewal date.</li>
-    <li><strong>Free trials.</strong> Where a free trial is offered, you will be charged when the trial ends unless you cancel before then.</li>
+    <li><strong>Pricing.</strong> The price is shown in Google Play before you buy and may vary by region. Taxes may be added.</li>
+    <li><strong>One-time.</strong> Pro is not a subscription. It does not renew and there is nothing to cancel. Google Play is the record of ownership; the App caches the result so Pro keeps working offline.</li>
     <li><strong>Refunds.</strong> Refunds are handled by Google under the Google Play refund policy. We cannot issue refunds directly, but we are happy to help you find the right place to request one.</li>
-    <li><strong>Changes.</strong> We may change pricing or the features included in a purchase with reasonable notice. Changes will not affect a period you have already paid for.</li>
+    <li><strong>Changes.</strong> We may add features to Pro, change its price for new buyers, or offer additional purchases in future. Features you have already unlocked will not be removed from your purchase.</li>
 </ul>
+<p>Listening statistics and achievements are recorded whether or not Pro is owned, but they are stored per device and do not sync between devices.</p>
 
 <h2 id="ip">8. Intellectual property</h2>
 <p>The App, the Site, and all associated software, designs, logos, text and graphics are owned by {{ $company }} or our licensors and are protected by copyright, trademark and other laws. "Appollo" and the Appollo logo are trademarks of {{ $company }}. Nothing in these Terms gives you any right to use our branding without our prior written consent.</p>
 <p>If you send us feedback or suggestions, you grant us a perpetual, royalty-free licence to use them without obligation to you.</p>
 
-<h2 id="third-party">9. Third-party services</h2>
+<h2 id="third-party">9. Third-party services and components</h2>
 <p>The App integrates with services we do not control, including Google Play, Android Auto, and any Audiobookshelf or sync server you connect to. Your use of those services is governed by their own terms and privacy policies. We are not responsible for third-party services or content.</p>
+<p>The transcripts feature uses open-source speech recognition components (Whisper models and the sherpa-onnx runtime) that run on your device under their own licences, and downloads model files from a public mirror on Hugging Face. Transcripts are generated automatically by a machine and will contain errors, especially with names, accents and background noise. They are provided for your personal convenience only and are not a substitute for the audio.</p>
 
 <h2 id="disclaimer">10. Disclaimers</h2>
 <p>The Service is provided "<strong>as is</strong>" and "<strong>as available</strong>". To the fullest extent permitted by law, we disclaim all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose and non-infringement. We do not warrant that the Service will be uninterrupted, error-free, or compatible with every device, audio file or server.</p>
-<p><strong>Please back up your files.</strong> While we take care with your data, we are not responsible for the loss of audio files, listening positions or statistics, whether stored on your device or on a server you connect to.</p>
+<p><strong>Please back up your files.</strong> While we take care with your data, we are not responsible for the loss of audio files, listening positions, statistics or transcripts, whether stored on your device or on a server you connect to.</p>
 
 <h2 id="liability">11. Limitation of liability</h2>
 <p>To the fullest extent permitted by law, {{ $company }} and its officers, employees and contractors will not be liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits or goodwill, arising out of or relating to your use of the Service. Our total liability for any claim relating to the Service is limited to the greater of (a) the amount you paid us in the 12 months before the claim arose, or (b) £50 (or the equivalent in your local currency).</p>

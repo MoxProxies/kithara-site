@@ -7,12 +7,12 @@
         <div>
             <span class="eyebrow">Audiobook player for Android</span>
             <h1>Your library.<br>Your pace.<br>Always in your pocket.</h1>
-            <p class="lead">Point Appollo at a folder on your phone, an Audiobookshelf server, or both. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
+            <p class="lead">Point Appollo at a folder on your phone, a server on your home network, or both. It finds your books, reads the chapters out of the files themselves, and keeps your place in step across devices.</p>
             <div class="hero-actions">
                 @include('partials.store-buttons')
                 <a href="#features" class="btn btn-ghost">See what it does</a>
             </div>
-            <p class="hero-note">Free to download. No account, no analytics, no telemetry.</p>
+            <p class="hero-note">Free to listen, with no ads and no time limit. No account, no analytics, no telemetry.</p>
         </div>
 
         <div class="phone" aria-hidden="true">
@@ -27,7 +27,7 @@
                 <div class="np-times"><span>4:12:36</span><span>−5:48:10</span></div>
             </div>
             <div class="np-controls">
-                <span class="ctrl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+                <span class="ctrl">1.25×</span>
                 <span class="ctrl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg></span>
                 <span class="ctrl play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
                 <span class="ctrl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5V2l4 4-4 4V7a5 5 0 1 0 5 5h2a7 7 0 1 1-7-7z"/></svg></span>
@@ -51,33 +51,88 @@
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
                 <h3>Real chapters, read from the file</h3>
-                <p>Appollo parses chapter lists straight out of your m4b and mp3 files, including the layouts most players miss, so a 30-hour epic is easy to move around in.</p>
+                <p>Chapter lists come straight out of the file: m4b chapter atoms, QuickTime chapter tracks, ID3 chapter frames in mp3, or a .cue sheet beside the audio. A folder of numbered mp3s becomes one book on one timeline.</p>
             </article>
             <article class="feature">
-                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 16a4 4 0 0 0 0-8h-1A6 6 0 0 0 4.5 9.6 3.5 3.5 0 0 0 5 16.5h12z"/></svg></div>
-                <h3>Audiobookshelf built in</h3>
-                <p>Connect your server with its address, username and password. Books stream by default; tap the cloud badge on a cover to pin one to the device for offline listening.</p>
-            </article>
-            <article class="feature">
-                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.6-6.4M21 3v6h-6"/></svg></div>
-                <h3>Sync that gets offline right</h3>
-                <p>Listen on the train with wifi off, then pick up on another device. Unpushed local changes win, so a stale timestamp from the server never rewinds you.</p>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                <h3>Playback that respects your ears</h3>
+                <p>Speed from 0.5× to 3.5× with pitch preserved and remembered per book. Skip silence. Configurable 5 to 60 second jumps that cross file boundaries, so skipping back at the start of part three lands you in part two.</p>
             </article>
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div>
-                <h3>Sleep timer and call rewind</h3>
-                <p>Drift off with a timer set to a duration or the end of the chapter. When a phone call interrupts, playback resumes five seconds back so you never lose the thread.</p>
+                <h3>A sleep timer that listens back</h3>
+                <p>Count down or stop at the end of the chapter. The volume fades over the last twenty seconds instead of cutting dead, and a shake of the phone adds more time without opening your eyes.</p>
+            </article>
+            <article class="feature">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg></div>
+                <h3>Never lose the thread</h3>
+                <p>Your position is saved every five seconds. A phone call or a navigation prompt hands back five seconds when it ends, and a smart rewind on resume scales from two seconds to thirty depending on how long you were away.</p>
             </article>
             <article class="feature">
                 <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.5-5h-11zM7 12l1.5-4h7L17 12M6 17v2m12-2v2"/></svg></div>
                 <h3>Android Auto and Bluetooth</h3>
-                <p>Every library gets its own node in Android Auto. Steering wheel and headphone buttons control the same session as the screen and the notification.</p>
+                <p>Browse by continue listening, author or library on the head unit, with voice search over title, author, narrator and series. A press of play on your headphones picks up your last book with no app open.</p>
             </article>
             <article class="feature">
-                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
-                <h3>Multi-file books, one timeline</h3>
-                <p>A book split across a dozen files behaves like a single recording. Skip back at the start of part three and you land at the end of part two, not at 0:00.</p>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></div>
+                <h3>Bookmarks, search and sort</h3>
+                <p>Label a moment and jump back to it later. Search, filter and sort your library, pin favourites, and let Appollo mark a book finished at 99% so it drops out of your way.</p>
             </article>
+        </div>
+    </div>
+</section>
+
+{{-- Pro --}}
+<section class="section" id="pro">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Appollo Pro</span>
+            <h2>Everything you need to listen is free. Pro makes it a system.</h2>
+            <p>Pro is a one-time unlock through Google Play. No subscription, no renewal. Stats and achievements are recorded from day one, so unlocking later shows your full history.</p>
+        </div>
+
+        <div class="plans">
+            <div class="plan">
+                <h3>Free, forever</h3>
+                <ul class="plan-list">
+                    <li>Playback, chapters, speed and skip silence</li>
+                    <li>Sleep timer with fade and shake-to-extend</li>
+                    <li>Android Auto, Bluetooth and notification controls</li>
+                    <li>Bookmarks, search, filters, sort and pinning</li>
+                    <li>One folder on the device</li>
+                    <li>Purple theme that follows the system</li>
+                </ul>
+            </div>
+            <div class="plan plan-pro">
+                <h3>Pro <span class="plan-tag">One-time purchase</span></h3>
+                <ul class="plan-list">
+                    <li><strong>Server libraries:</strong> Audiobookshelf and the open Appollo sync protocol</li>
+                    <li><strong>Stream, download and sync</strong> your position across devices</li>
+                    <li><strong>Several libraries</strong> at once, each with its own tab</li>
+                    <li><strong>Transcripts:</strong> on-device speech-to-text for any chapter</li>
+                    <li><strong>Listening stats</strong> with a daily goal, streaks and a 30-day chart</li>
+                    <li><strong>24 achievements</strong> across time, streaks and listening style</li>
+                    <li><strong>Themes:</strong> light, dark, accent colours, or colours from your wallpaper</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- Transcripts --}}
+<section class="section section-alt">
+    <div class="container split">
+        <div>
+            <span class="eyebrow">Transcripts · Pro</span>
+            <h2>Read along, or find that one line</h2>
+            <p class="muted">Appollo turns any chapter into timed text, entirely on your phone. Nothing is uploaded and nothing leaves the device. Tap a passage to jump there, or search the whole book for a phrase you half remember.</p>
+            <p class="muted">Pick the speech model that suits your phone: tiny is fastest, small is closest to a dictation app. Models download once on first use and long chapters transcribe in the background with progress in the notification.</p>
+        </div>
+        <div class="transcript-demo" aria-hidden="true">
+            <div class="transcript-search">Search the whole book</div>
+            <p class="transcript-line"><span>41:12</span>The harbour was empty by the time she reached it, the last boat a smudge against the grey.</p>
+            <p class="transcript-line active"><span>41:20</span>She did not call out. There was no one left who would have answered.</p>
+            <p class="transcript-line"><span>41:27</span>Instead she sat on the wall, took out the letter, and read it again from the beginning.</p>
         </div>
     </div>
 </section>
@@ -93,27 +148,36 @@
         <div class="steps">
             <div class="step">
                 <h3>Add a library</h3>
-                <p>Pick a folder on the device, or sign in to your Audiobookshelf server. Add as many libraries as you like; each gets its own tab in the app and its own node in Android Auto.</p>
+                <p>Pick a folder on the device, or sign in to your Audiobookshelf server. Appollo reads titles, authors, narrators, covers and chapters from the files, and never loses your position on a rescan.</p>
             </div>
             <div class="step">
                 <h3>Press play</h3>
-                <p>Appollo scans the files for tags, covers, duration and chapters. Playback keeps running in the background, in the notification, and in the car.</p>
+                <p>Playback keeps running in the background, in the notification, on the lock screen and in the car. Downloads and sync can be limited to Wi-Fi.</p>
             </div>
             <div class="step">
                 <h3>Pick up anywhere</h3>
-                <p>Your position is saved to the second and synced through your server when one is connected. Go offline for a week and it catches up when you are back.</p>
+                <p>With a server connected, your position, finished state and bookmarks follow you between devices. Listen offline for a week and your unpushed progress still wins when you reconnect.</p>
             </div>
         </div>
 
         <div class="section-head" style="margin-top: 3.5rem; margin-bottom: 0;">
             <h3>Plays the files you already have</h3>
-            <p style="font-size: 1rem;">DRM-free audiobooks from any store, library rip, or your own recordings.</p>
+            <p style="font-size: 1rem;">DRM-free audiobooks from any store, library rip, or your own recordings. Audible .aax files need their DRM removed first.</p>
         </div>
         <div class="formats">
             <span class="chip">M4B</span>
-            <span class="chip">M4A / AAC</span>
+            <span class="chip">M4A</span>
+            <span class="chip">MP4</span>
+            <span class="chip">AAC</span>
             <span class="chip">MP3</span>
-            <span class="chip">Audiobookshelf</span>
+            <span class="chip">OGG</span>
+            <span class="chip">OPUS</span>
+            <span class="chip">FLAC</span>
+            <span class="chip">WAV</span>
+            <span class="chip">WMA</span>
+            <span class="chip">MKA</span>
+            <span class="chip">3GP</span>
+            <span class="chip">CUE sheets</span>
         </div>
     </div>
 </section>
@@ -124,7 +188,7 @@
         <div class="section-head" style="margin-bottom: 0;">
             <span class="eyebrow">Privacy</span>
             <h2>Your listening is nobody's business</h2>
-            <p>The only network traffic Appollo makes is to servers you add yourself. No analytics, no accounts, no telemetry, no ads. Read the <a href="{{ route('privacy') }}">privacy policy</a>; it is short.</p>
+            <p>No analytics, no accounts, no telemetry, no ads. Appollo talks to the servers you add and nothing else, apart from a one-time speech model download if you use transcripts. Read the <a href="{{ route('privacy') }}">privacy policy</a>; it is short.</p>
         </div>
     </div>
 </section>

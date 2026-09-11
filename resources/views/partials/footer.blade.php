@@ -7,6 +7,7 @@
 
         <ul class="footer-links">
             <li><a href="{{ route('home') }}#features">Features</a></li>
+            <li><a href="{{ route('home') }}#pro">Pro</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
             <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
             <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>

@@ -11,6 +11,7 @@
 
         <ul class="nav-links" id="nav-links">
             <li><a href="{{ route('home') }}#features" @if(request()->routeIs('home')) aria-current="page" @endif>Features</a></li>
+            <li><a href="{{ route('home') }}#pro">Pro</a></li>
             <li><a href="{{ route('contact') }}" @if(request()->routeIs('contact')) aria-current="page" @endif>Contact</a></li>
             <li><a href="{{ route('home') }}#download" class="btn btn-primary">Get the app</a></li>
         </ul>
