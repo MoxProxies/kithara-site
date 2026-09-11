@@ -788,7 +788,11 @@ code {
 .notify-status { margin: 1rem auto 0; max-width: 30rem; font-size: 0.95rem; }
 .notify-status.ok { color: #9be0b6; }
 .notify-status.err { color: var(--danger); }
-.notify-note { margin: 1rem 0 0; font-size: 0.85rem; color: var(--text-dim); }
+.notify-note { margin: 1.5rem 0 0; font-size: 0.85rem; color: var(--text-dim); }
+.cta-band--notify { padding-top: clamp(2.25rem, 5vw, 3.25rem); padding-bottom: clamp(1.75rem, 4vw, 2.5rem); }
+.cta-band .notify-note { margin: 1.4rem auto 0; max-width: 30rem; }
+.cta-band--notify h2 { margin-bottom: 0.4rem; }
+.cta-band--notify > p:first-of-type { margin-bottom: 1.5rem; }
 .sr-only {
   position: absolute;
   width: 1px;

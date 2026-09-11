@@ -16,28 +16,20 @@
             <tr><td>Playback, chapters, speed 0.5x to 3.5x, skip silence</td><td>Server libraries: Audiobookshelf and the Kithara sync protocol</td></tr>
             <tr><td>Sleep timer with fade-out and shake to extend</td><td>Streaming, downloads and position sync across devices</td></tr>
             <tr><td>Android Auto, Bluetooth and notification controls</td><td>More than one library, each with its own tab</td></tr>
-            <tr><td>Bookmarks, search, filters, sort and pinning</td><td>Listening stats and the 30-day chart</td></tr>
-            <tr><td>One folder on the device</td><td>56 achievements in seven groups, with an "On the shelf" card of every library's progress</td></tr>
+            <tr><td>Bookmarks, search, filters, sort and pinning</td><td>Listening stats, the 30-day chart and your shelf</td></tr>
+            <tr><td>One folder on the device</td><td>56 achievements in seven groups</td></tr>
             <tr><td>Purple theme that follows the system</td><td>Theme mode, accent colours, colours from your wallpaper</td></tr>
             <tr><td></td><td>Transcripts: on-device speech-to-text for any chapter</td></tr>
         </tbody>
     </table>
 </div>
 
-<figure class="guide-figure guide-figure--phone">
-    <img src="{{ asset('img/screens/achievements.webp') }}" srcset="{{ asset('img/screens/achievements.webp') }} 1x, {{ asset('img/screens/achievements@2x.webp') }} 2x" width="540" height="1142" alt="Achievements screen showing 15 of 56 unlocked, grouped into Time in the chair and Books, with progress bars on the locked ones" loading="lazy">
-</figure>
-
-<h2 id="how-it-works">How the purchase works</h2>
+<h2 id="how-it-works">One purchase, no strings</h2>
 <ul>
-    <li><strong>One payment, no renewal.</strong> Pro is an in-app purchase handled by Google Play Billing. The price is shown in Google Play before you buy and may vary by region.</li>
-    <li><strong>Works offline.</strong> Google Play is the source of truth for ownership, and the result is cached on the device, so Pro keeps working with no connection.</li>
-    <li><strong>Your history is already there.</strong> Listening stats and achievements are recorded whether or not you own Pro, so unlocking later shows everything from the day you installed the app.</li>
-    <li><strong>Refunds</strong> go through Google Play under its refund policy. We cannot issue them directly, but we can point you to the right place; see <a href="{{ route('terms') }}#purchases">the Terms</a>.</li>
+    <li><strong>Pay once.</strong> Pro is an in-app purchase through Google Play, not a subscription. The price is shown in Google Play before you buy.</li>
+    <li><strong>Works offline.</strong> Ownership is confirmed with Google Play and cached on the device, so Pro keeps working with no connection.</li>
+    <li><strong>Your history is already there.</strong> Stats and achievements are recorded from the day you install, so unlocking later shows everything.</li>
 </ul>
-
-<h2 id="why">Why these features and not others</h2>
-<p>The split is simple: anything you need to press play on a file you already have is free. Pro covers the parts that make Kithara talk to a server, remember across devices, or do heavy work on the phone. The free tier is not a trial and does not expire.</p>
 
 @if (config('kithara.play_live'))
 <h2 id="get">Get it</h2>

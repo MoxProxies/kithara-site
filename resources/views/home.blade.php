@@ -219,7 +219,7 @@
 {{-- Download CTA --}}
 <section class="section" id="download">
     <div class="container">
-        <div class="cta-band" data-reveal>
+        <div class="cta-band {{ config('kithara.play_live') ? '' : 'cta-band--notify' }}" data-reveal>
             @if (config('kithara.play_live'))
                 <h2>Ready for your next chapter?</h2>
                 <p>Download Kithara for Android and bring your whole library with you.</p>
