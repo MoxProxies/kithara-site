@@ -18,6 +18,7 @@ class GuidePagesTest extends TestCase
             'android-auto' => ['/android-auto', 'Voice search'],
             'sync-protocol' => ['/sync-protocol', 'How a client resolves conflicts'],
             'howto.m4b-chapters' => ['/how-to/add-chapters-to-m4b', '-map_chapters 1'],
+            'howto.audiobookshelf-setup' => ['/how-to/audiobookshelf-setup', 'docker compose up -d'],
             'changelog' => ['/changelog', '1.0.0'],
             'compare' => ['/compare', 'How these are written'],
             'compare.smart-audiobook-player' => ['/compare/smart-audiobook-player', 'Where Smart AudioBook Player is the better choice'],
@@ -90,7 +91,14 @@ class GuidePagesTest extends TestCase
 
     public function test_how_to_page_carries_howto_schema(): void
     {
-        $html = $this->get('/how-to/add-chapters-to-m4b')->assertOk()->getContent();
+        foreach (['/how-to/add-chapters-to-m4b', '/how-to/audiobookshelf-setup'] as $path) {
+            $this->assertHowToSchema($path);
+        }
+    }
+
+    private function assertHowToSchema(string $path): void
+    {
+        $html = $this->get($path)->assertOk()->getContent();
 
         preg_match_all('#<script type="application/ld\+json">(.*?)</script>#s', $html, $blocks);
         $types = array_map(fn ($json) => json_decode($json, true, 512, JSON_THROW_ON_ERROR)['@type'] ?? null, $blocks[1]);

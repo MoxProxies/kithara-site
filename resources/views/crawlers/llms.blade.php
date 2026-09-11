@@ -22,6 +22,7 @@
 - [Formats and chapters]({{ route('formats') }}): supported formats, folder conventions, chapter sources
 - [Android Auto]({{ route('android-auto') }}): car screen, voice search, Bluetooth
 - [Sync protocol]({{ route('sync-protocol') }}): version 1 of the HTTP spec for self-hosted servers
+- [How to set up Audiobookshelf and listen on Android]({{ route('howto.audiobookshelf-setup') }}): Docker install, folder layout, users, VPN or HTTPS, connecting Kithara
 - [How to add chapters to an m4b]({{ route('howto.m4b-chapters') }}): ffmpeg commands to add, fix or merge chapters, plus the cue-sheet alternative
 - [Comparisons]({{ route('compare') }}): Kithara vs [Smart AudioBook Player]({{ route('compare.smart-audiobook-player') }}), [the Audiobookshelf app]({{ route('compare.audiobookshelf-app') }}) and [Audible]({{ route('compare.audible') }})
 - [Changelog]({{ route('changelog') }}): release notes, also as [RSS]({{ route('changelog.feed') }})

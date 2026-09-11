@@ -17,6 +17,7 @@
 </ul>
 
 <h2 id="setup">Setting it up</h2>
+<p>No server yet? Start with <a href="{{ route('howto.audiobookshelf-setup') }}">the full walkthrough</a>, from Docker to the phone. If Audiobookshelf is already running:</p>
 <ol>
     <li>Open <strong>Library</strong>, tap the <strong>+</strong> icon, then <strong>Add a library</strong> and choose <strong>Audiobookshelf</strong>.</li>
     <li>Enter the address exactly as you would type it into a browser, including the port, for example <code>http://192.168.1.20:13378</code>. Plain <code>http</code> on your home network is fine and is assumed when you leave the scheme off. If you reach the server over the internet, use <code>https</code>.</li>

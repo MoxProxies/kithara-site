@@ -7,7 +7,7 @@
         ],
         [
             'Does Kithara work with Audiobookshelf?',
-            'Yes. Add your Audiobookshelf server with its address, username and password. Books stream by default, you can download any book for offline listening by tapping the cloud badge on its cover, and your position syncs across devices. Kithara is written against the Audiobookshelf v2 API. Server libraries are part of Kithara Pro.',
+            'Yes. Add your Audiobookshelf server with its address, username and password. Books stream by default, you can download any book for offline listening by tapping the cloud badge on its cover, and your position syncs across devices. Kithara is written against the Audiobookshelf v2 API. Server libraries are part of Kithara Pro. No server yet? This site has a step-by-step setup guide.',
         ],
         [
             'What audio formats does it play?',
