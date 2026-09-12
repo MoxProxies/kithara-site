@@ -54,5 +54,9 @@
     <li>Skip intervals are configurable independently for back and forward: 5, 10, 15, 30 or 60 seconds.</li>
     <li>Your position is saved every five seconds and on every pause, seek and stop, and resumes with a short rewind scaled to how long you were away.</li>
     <li>"Previous chapter" restarts the current chapter if you are more than five seconds into it, the way a CD player does.</li>
+    <li><strong>Chapter trims (Pro):</strong> per book, skip a set number of seconds at the start and end of every chapter, and jump short credits chapters whole. Set once from the book's menu; applied live.</li>
+    <li><strong>Up next (Pro):</strong> queue any book to play when this one ends, or let the next unfinished book in the same series follow automatically.</li>
+    <li><strong>Clear speech and boost (Pro):</strong> a voice filter that cuts rumble and lifts presence for cars and kitchens, and up to 12 dB of gain through a soft limiter for quiet recordings. Both live in the speed sheet.</li>
+    <li><strong>Start from the beginning</strong> puts a book back to not started, position and all.</li>
 </ul>
 @endsection

@@ -3,7 +3,7 @@
     $faqs = [
         [
             'Is Kithara free?',
-            'Yes. Everything you need to listen is free, with no ads and no time limit: playback, chapters, speed and skip silence, the sleep timer, Android Auto and Bluetooth controls, bookmarks, search and one folder on the device. Kithara Pro is a one-time purchase through Google Play, not a subscription. It unlocks server libraries, streaming and downloads, cross-device sync, more than one library, listening stats, achievements, transcripts and themes.',
+            'Yes. Everything you need to listen is free, with no ads and no time limit: playback, chapters, speed and skip silence, the sleep timer, Android Auto and Bluetooth controls, bookmarks, search and one folder on the device. Kithara Pro is a one-time purchase through Google Play, not a subscription. It unlocks server libraries, streaming and downloads, cross-device sync, more than one library, listening stats and achievements, transcripts, clear speech and volume boost, an up-next queue and chapter trims, home-screen widgets, a year-in-review card, backup and restore, and themes and app icons.',
         ],
         [
             'Does Kithara work with Audiobookshelf?',
@@ -28,6 +28,10 @@
         [
             'What languages is Kithara available in?',
             'English, French, Spanish, German, Portuguese (Brazil) and Italian. Pick one in Settings, Language, or let it follow the phone. Every language except English was machine-translated and checked by us rather than by native speakers, so if a screen reads badly, please tell us and we will fix it. Transcripts are English-only for now, because the on-device speech models only understand English.',
+        ],
+        [
+            'Can I move everything to a new phone?',
+            'Yes, with Pro. Settings, Data and storage, Back up writes one file with your positions, finished books, pins, speeds, bookmarks, listening history, achievements and settings. Restore it on the new phone after adding the same libraries and the books line up by id, or by title, author and length. Audio, covers and transcripts are not in the file, and neither are server passwords or tokens.',
         ],
         [
             'Is there an iPhone or iOS version?',

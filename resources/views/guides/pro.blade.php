@@ -16,10 +16,14 @@
             <tr><td>Playback, chapters, speed 0.5x to 3.5x, skip silence</td><td>Server libraries: Audiobookshelf and the Kithara sync protocol</td></tr>
             <tr><td>Sleep timer with fade-out and shake to extend</td><td>Streaming, downloads and position sync across devices</td></tr>
             <tr><td>Android Auto, Bluetooth and notification controls</td><td>More than one library, each with its own tab</td></tr>
-            <tr><td>Bookmarks, search, filters, sort and pinning</td><td>Listening stats, the 30-day chart and your shelf</td></tr>
+            <tr><td>Bookmarks, search, filters, sort and pinning</td><td>Listening stats by day, week, month and year, and your shelf</td></tr>
             <tr><td>One folder on the device, plus LibriVox's free catalogue</td><td>56 achievements in seven groups</td></tr>
-            <tr><td>Purple theme that follows the system</td><td>Theme mode, accent colours, colours from your wallpaper</td></tr>
-            <tr><td></td><td>Transcripts: on-device speech-to-text for any chapter</td></tr>
+            <tr><td>Purple theme that follows the system</td><td>Theme mode, accent colours, wallpaper colours, eleven app icons</td></tr>
+            <tr><td>Six languages with an in-app picker</td><td>Transcripts: on-device speech-to-text for any chapter</td></tr>
+            <tr><td></td><td>Clear speech filter and up to 12 dB of volume boost</td></tr>
+            <tr><td></td><td>Up-next queue, and chapter trims for intros, outros and credits</td></tr>
+            <tr><td></td><td>Home-screen widgets and a shareable year in review</td></tr>
+            <tr><td></td><td>Backup and restore to a file</td></tr>
         </tbody>
     </table>
 </div>

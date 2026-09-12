@@ -44,6 +44,9 @@
     <li><strong>Pro status</strong>: whether Kithara Pro is owned, cached from Google Play so Pro keeps working offline.</li>
     <li><strong>Server credentials</strong>: if you connect a server, your password is exchanged for an access token at sign-in and then discarded. Only the token and the server address are stored.</li>
     <li><strong>Downloads</strong>: books you choose to pin for offline use are stored in the App's private storage.</li>
+    <li><strong>Backups you export</strong> (Pro): a file you choose where to save, holding your positions, bookmarks, listening history, achievements and settings. It never includes audio, transcripts, or server passwords and tokens. Where you keep it is up to you.</li>
+    <li><strong>Year-in-review cards</strong> (Pro): an image of your year's listening that the App creates only when you ask and hands to the share sheet. What you share it with is your choice.</li>
+    <li><strong>Home-screen widgets</strong> (Pro): show the current book and your streak on the launcher, from data already on the device.</li>
 </ul>
 <p>This data is included in Android's standard app backup if you have backup enabled on your device, which is governed by Google's policies, not ours. Uninstalling the App removes all of it from your device.</p>
 

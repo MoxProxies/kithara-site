@@ -36,7 +36,11 @@
             'Sleep timer with fade-out and shake to extend',
             'Android Auto with voice search',
             'On-device Whisper transcripts (Pro)',
-            'Listening statistics and 56 achievements (Pro)',
+            'Listening statistics by period and 56 achievements (Pro)',
+            'Clear speech filter and volume boost (Pro)',
+            'Up-next queue and per-book chapter trims (Pro)',
+            'Home-screen widgets and a shareable year in review (Pro)',
+            'Backup and restore to a file (Pro)',
             'No account, no analytics, no telemetry',
         ],
         'screenshot' => [

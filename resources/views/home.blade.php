@@ -132,9 +132,13 @@
                     <li><strong>Stream, download and sync</strong> your position across devices</li>
                     <li><strong>Several libraries</strong> at once, each with its own tab</li>
                     <li><strong>Transcripts:</strong> on-device speech-to-text for any chapter</li>
-                    <li><strong>Listening stats</strong> with a daily goal, streaks and a 30-day chart</li>
+                    <li><strong>Listening stats</strong> by day, week, month and year, each against the last, plus a shareable year in review every December</li>
                     <li><strong>56 achievements</strong> across time, books, streaks, feats, odd hours, style and your shelf</li>
-                    <li><strong>Themes:</strong> light, dark, accent colours, or colours from your wallpaper</li>
+                    <li><strong>Clear speech and boost:</strong> a voice filter for cars and kitchens, and up to 12 dB for quiet recordings</li>
+                    <li><strong>Up next and chapter trims:</strong> queue what plays after this book, and skip intros, outros and credits for good</li>
+                    <li><strong>Home-screen widgets:</strong> continue listening, and your streak</li>
+                    <li><strong>Backup and restore:</strong> everything you have listened to, bookmarked and earned in one file</li>
+                    <li><strong>Themes and icons:</strong> light, dark, accent colours, wallpaper colours, and eleven app icons</li>
                 </ul>
             </div>
         </div>
