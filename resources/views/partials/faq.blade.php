@@ -35,7 +35,7 @@
         ],
         [
             'Is there an iPhone or iOS version?',
-            'No. Kithara is Android only and runs on Android 8.0 or later.',
+            'Not yet. Kithara runs on Android 8.0 or later. A native iPhone and iPad version is in development; it shares the sync protocol and the backup format with the Android app, so a Kithara server keeps your place across both and a backup made on one restores on the other. There is no release date, and this site will say so the day there is.',
         ],
         [
             'Does it work with Android Auto?',

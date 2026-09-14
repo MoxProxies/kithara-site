@@ -27,7 +27,7 @@
 <h2 id="choose-official">Where the official app is the better choice</h2>
 <ul>
     <li><strong>You listen to podcasts or read ebooks through Audiobookshelf.</strong> Kithara does neither; the official app does both.</li>
-    <li><strong>You need iOS too.</strong> Kithara is Android only.</li>
+    <li><strong>You need iOS today.</strong> Kithara is Android only for now; an iPhone and iPad version is in development with no release date.</li>
     <li><strong>You want every server feature the moment it ships.</strong> Collections, playlists, series views and whatever comes next arrive in the official client first, by definition.</li>
     <li><strong>Free and open source matters to you.</strong> The official app is both. Kithara's server features are a paid unlock.</li>
 </ul>

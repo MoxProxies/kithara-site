@@ -4,7 +4,7 @@
 
 ## Key facts
 
-- Platform: Android 8.0 or later. No iOS version.
+- Platform: Android 8.0 or later. An iOS/iPadOS version is in development (shares the sync protocol and backup format); no release date.
 - Price: free with no ads or time limits. Kithara Pro is a one-time in-app purchase through Google Play (not a subscription).
 - Free: playback, chapters, speed, skip silence, LibriVox (thousands of public-domain audiobooks: search, stream, download, no account), sleep timer with fade and shake-to-extend, Android Auto, Bluetooth and notification controls, bookmarks, search, one folder on the device.
 - Pro: Audiobookshelf and Kithara sync-server libraries, streaming, downloads, cross-device position sync (bookmarks too on Kithara servers), multiple libraries, listening stats with a per-library shelf card and stats by day/week/month/year, 56 achievements, on-device Whisper transcripts, clear speech and volume boost, up-next queue and chapter trims, home-screen widgets, year-in-review card, backup and restore, themes and eleven app icons.

@@ -1,4 +1,4 @@
-A small HTTP+JSON contract between a Kithara client (Android today) and a
+A small HTTP+JSON contract between a Kithara client (Android today, Apple next) and a
 server that holds a library and each user's listening state. Two clients that both
 implement this document interoperate through any server that implements it, with no
 knowledge of each other.
@@ -285,6 +285,11 @@ ahead of the code:
 | §5 progress push/pull, conflict rules | implemented; `409` body adopted; `speed` not sent |
 | §6 bookmarks POST/GET/DELETE | implemented; deletions are tombstoned locally until the server confirms |
 | §7 range playback, downloads | implemented |
+
+## 11. Client conformance: Apple
+
+The iOS client, in development, implements the same table as §10, plus `device` on `/api/auth`.
+Its wire types and conflict rules are unit-tested against the samples in this document.
 
 ## Changelog
 

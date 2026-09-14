@@ -11,7 +11,7 @@
 
 <h2 id="how-it-works">How it works in Kithara</h2>
 <ol>
-    <li>Open <strong>Library</strong>, then the menu, <strong>Manage libraries</strong>, <strong>Add a library</strong>, and choose <strong>LibriVox</strong>. It appears as its own tab.</li>
+    <li>Open <strong>Library</strong>. On a fresh install, pick <strong>LibriVox</strong> from the choices on the empty screen; otherwise open the menu, <strong>Manage libraries</strong>, <strong>Add a library</strong>, and choose <strong>LibriVox</strong>. It appears as its own tab.</li>
     <li>The tab opens a browse screen. Search <strong>by title</strong> or <strong>by author</strong> (the author's surname works best), or scroll the <strong>recently added to LibriVox</strong> shelf.</li>
     <li>Tap a result to see the description, the readers, and a link to its LibriVox page. Tap <strong>Add to library</strong>.</li>
     <li>The book joins your LibriVox tab. Tap the cover to stream; tap the cloud badge to download it for offline listening, exactly as with a server book.</li>
