@@ -51,6 +51,8 @@
                 @if (config('kithara.play_live'))
                     <p>Free on Google Play for Android 8.0 and later.</p>
                     <div class="hero-actions" style="margin: 1rem 0 0;">@include('partials.store-buttons')</div>
+                @elseif (config('kithara.play_testing'))
+                    <p>In internal testing on Google Play. <a href="{{ route('home') }}#download">Join the tester list</a> and install it today.</p>
                 @else
                     <p>Kithara is not on Google Play yet. <a href="{{ route('home') }}#download">Leave your email</a> and we will tell you the day it lands.</p>
                 @endif

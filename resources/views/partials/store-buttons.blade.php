@@ -4,6 +4,11 @@
         {!! $playIcon !!}
         Get it on Google Play
     </a>
+@elseif (config('kithara.play_testing'))
+    <a href="{{ config('kithara.play_test_url') }}" class="btn btn-primary" rel="noopener">
+        {!! $playIcon !!}
+        Join the test on Google Play
+    </a>
 @else
     <span class="btn btn-soon" role="status">
         <span class="soon-dot" aria-hidden="true"></span>

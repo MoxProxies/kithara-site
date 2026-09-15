@@ -232,8 +232,13 @@
                     @include('partials.store-buttons')
                 </div>
             @else
-                <h2>Coming soon to Google Play</h2>
-                <p>Kithara is on its way to Google Play. Leave your email and we will send one message the day it lands, then forget you.</p>
+                @if (config('kithara.play_testing'))
+                    <h2>Kithara is in testing on Google Play</h2>
+                    <p>The app is on Google Play as an internal test, and Google only lets in accounts on the tester list. Leave the Google account email you use on your phone and we will add you, then send one message when it goes public.</p>
+                @else
+                    <h2>Coming soon to Google Play</h2>
+                    <p>Kithara is on its way to Google Play. Leave your email and we will send one message the day it lands, then forget you.</p>
+                @endif
 
                 @if (session('notify_status'))
                     <p class="notify-status ok" role="status">{{ session('notify_status') }}</p>
@@ -246,11 +251,15 @@
                             <label for="notify-website">Website</label>
                             <input type="text" id="notify-website" name="website" tabindex="-1" autocomplete="off">
                         </div>
-                        <button type="submit" class="btn btn-primary">Notify me</button>
+                        <button type="submit" class="btn btn-primary">{{ config('kithara.play_testing') ? 'Add me as a tester' : 'Notify me' }}</button>
                     </form>
                     @error('email')<p class="notify-status err" id="notify-error" role="alert">{{ $message }}</p>@enderror
                     @error('website')<p class="notify-status err" role="alert">{{ $message }}</p>@enderror
-                    <p class="notify-note">Want in early as a tester? <a href="{{ route('contact') }}">Get in touch</a> instead.</p>
+                    @if (config('kithara.play_testing'))
+                        <p class="notify-note">Already on the tester list? <a href="{{ config('kithara.play_test_url') }}" rel="noopener">Open the test on Google Play</a> with that account, accept the invitation, and install.</p>
+                    @else
+                        <p class="notify-note">Want in early as a tester? <a href="{{ route('contact') }}">Get in touch</a> instead.</p>
+                    @endif
                 @endif
             @endif
         </div>

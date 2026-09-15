@@ -43,8 +43,9 @@ KITHARA_COMPANY_ADDRESS=                            # optional; leave empty unti
 KITHARA_PROVINCE=Ontario                            # province whose law governs the T&Cs
 KITHARA_SUPPORT_EMAIL=support@example.com           # public support address
 KITHARA_CONTACT_TO=hello@example.com                # where contact form submissions are sent
-KITHARA_PLAY_LIVE=false                             # false: "coming soon" pills instead of store buttons
-KITHARA_PLAY_STORE_URL=#                            # Google Play link, used once KITHARA_PLAY_LIVE=true
+KITHARA_PLAY_STAGE=soon                             # soon | testing | live (see config/kithara.php)
+KITHARA_PLAY_STORE_URL=#                            # public Play listing, used when live
+KITHARA_PLAY_TEST_URL=#                             # internal-test opt-in link, used when testing
 ```
 
 The "Last updated" date on the legal pages is set in `config/kithara.php`.

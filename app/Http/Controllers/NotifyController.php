@@ -24,7 +24,9 @@ class NotifyController extends Controller
 
         return redirect()
             ->to(url('/#download'))
-            ->with('notify_status', 'You are on the list. We will email you the day Kithara lands on Google Play.');
+            ->with('notify_status', config('kithara.play_testing')
+                ? 'You are on the list. We will add you as a tester, usually within a day, and email you when Kithara goes public.'
+                : 'You are on the list. We will email you the day Kithara lands on Google Play.');
     }
 
     private function alreadyListed(string $email): bool

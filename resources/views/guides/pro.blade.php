@@ -39,6 +39,9 @@
 <h2 id="get">Get it</h2>
 <p>Install Kithara from Google Play and open <strong>Settings</strong> to unlock Pro.</p>
 <div class="hero-actions">@include('partials.store-buttons')</div>
+@elseif (config('kithara.play_testing'))
+<h2 id="get">Availability</h2>
+<p>Kithara is on Google Play as an internal test. Testers can install it now; the public listing and the Pro price follow when testing ends. <a href="{{ route('home') }}#download">Join the tester list</a> to get in early.</p>
 @else
 <h2 id="get">Availability</h2>
 <p>Kithara is not on Google Play yet. The Pro price will appear in the listing once it is live. <a href="{{ route('home') }}#download">Leave your email</a> and we will send one message the day it lands.</p>

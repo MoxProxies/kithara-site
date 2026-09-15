@@ -76,6 +76,8 @@
                 <h3>Billing &amp; refunds</h3>
                 @if (config('kithara.play_live'))
                     <p>Purchases are handled by Google Play. For refunds, request them through Google Play; we can help point you in the right direction.</p>
+                @elseif (config('kithara.play_testing'))
+                    <p>Kithara is on Google Play as an internal test. Any purchase during the test goes through Google Play, and refunds are requested there; we can help point you in the right direction.</p>
                 @else
                     <p>Kithara is not on Google Play yet. Once it is, purchases and refunds will be handled there. Nothing to bill until then.</p>
                 @endif

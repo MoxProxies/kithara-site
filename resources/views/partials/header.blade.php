@@ -16,6 +16,8 @@
             <li><a href="{{ route('contact') }}" @if(request()->routeIs('contact')) aria-current="page" @endif>Contact</a></li>
             @if (config('kithara.play_live'))
                 <li><a href="{{ route('home') }}#download" class="btn btn-primary">Get the app</a></li>
+            @elseif (config('kithara.play_testing'))
+                <li><a href="{{ route('home') }}#download" class="btn btn-primary">Join the test</a></li>
             @else
                 <li><a href="{{ route('home') }}#download" class="btn btn-ghost">Coming soon</a></li>
             @endif
